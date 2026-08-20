@@ -1,0 +1,276 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@font-face {
+  font-family: "Anton";
+  src: url("./assets/fonts/anton-400.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/inter-var.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("./assets/fonts/jetbrains-mono-var.woff2") format("woff2");
+  font-weight: 100 800;
+  font-display: swap;
+  font-style: normal;
+}
+
+@theme inline {
+  --color-background: var(--obsidian);
+  --color-foreground: var(--bone-white);
+  --color-card: var(--graphite-veil);
+  --color-card-foreground: var(--bone-white);
+  --color-popover: var(--graphite-veil);
+  --color-popover-foreground: var(--bone-white);
+  --color-primary: var(--bone-white);
+  --color-primary-foreground: var(--obsidian);
+  --color-secondary: var(--graphite-veil);
+  --color-secondary-foreground: var(--bone-white);
+  --color-muted: var(--graphite-veil);
+  --color-muted-foreground: var(--fog-blue);
+  --color-accent: var(--bone-white);
+  --color-accent-foreground: var(--obsidian);
+  --color-destructive: var(--bone-white);
+  --color-border: var(--ash-border);
+  --color-input: var(--ash-border);
+  --color-ring: var(--fog-blue);
+  --color-bone-white: var(--bone-white);
+  --color-obsidian: var(--obsidian);
+  --color-graphite-veil: var(--graphite-veil);
+  --color-ash-border: var(--ash-border);
+  --color-fog-blue: var(--fog-blue);
+  --color-pure-black: var(--pure-black);
+  --color-prism-red: var(--prism-red);
+  --color-prism-cyan: var(--prism-cyan);
+  --color-prism-lime: var(--prism-lime);
+  --font-suisseintlcond: "Anton", "Barlow Condensed", "Arial Narrow",
+    ui-sans-serif, sans-serif;
+  --font-suisseintl: "Inter", "Söhne", "Neue Haas Grotesk", ui-sans-serif,
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-suisseintlmono: "JetBrains Mono", "IBM Plex Mono", "Geist Mono",
+    ui-monospace, "Cascadia Mono", "Consolas", monospace;
+  --font-sans: var(--font-suisseintl);
+  --font-display: var(--font-suisseintlcond);
+  --font-mono: var(--font-suisseintlmono);
+  --radius-md: 5px;
+  --radius-xl: 15px;
+  --radius-full: 9999px;
+  --ease-focus: cubic-bezier(0.52, 0.01, 0, 1);
+}
+
+:root {
+  --spacing: 8px;
+  --bone-white: #fffdf9;
+  --obsidian: #101010;
+  --graphite-veil: #495764;
+  --ash-border: #403f3f;
+  --fog-blue: #6f879c;
+  --pure-black: #000000;
+  --prism-red: #ff2a2a;
+  --prism-cyan: #2a7fff;
+  --prism-lime: #2aff2a;
+}
+
+/* Desktop portfolio — conserva su base original (grid 4px, lh 1.5),
+   independiente del sistema tipográfico/spacing del landing */
+.desktop-base {
+  --spacing: 4px;
+  line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  background: var(--obsidian);
+  color: var(--bone-white);
+  line-height: 1.25;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Display — weight 500 (doc: "500 drives display headlines"); Clash Display voice */
+/* Display headlines — SuisseIntlCond (Anton) — massive uppercase condensed, brutalist */
+.display-xl {
+  font-family: var(--font-suisseintlcond);
+  font-weight: 400;
+  font-size: clamp(3.5rem, 11vw, 8.125rem);
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.display {
+  font-family: var(--font-suisseintlcond);
+  font-weight: 400;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+/* Secondary headlines — 40px/450 uppercase */
+.heading {
+  font-family: var(--font-suisseintl);
+  font-weight: 450;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.heading-lg {
+  font-family: var(--font-suisseintlcond);
+  font-weight: 400;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+}
+
+/* Labels, tags, technical meta — SuisseIntlMono (JetBrains Mono) 12px */
+.eyebrow {
+  font-family: var(--font-suisseintlmono);
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.lead {
+  font-size: clamp(1.125rem, 1.5vw, 1.25rem);
+  line-height: 1.2;
+}
+
+.ghost-link {
+  font-size: 14px;
+  letter-spacing: -0.011em;
+  text-transform: uppercase;
+  color: var(--bone-white);
+  text-decoration: none;
+  transition: color 0.5s var(--ease-focus);
+}
+
+.ghost-link:hover {
+  color: var(--fog-blue);
+}
+
+/* Prism artifact — glass geometric figures with RGB-split caustics, the only chromatic voice */
+.prism-shape {
+  position: absolute;
+  background: var(--pure-black);
+  border: 1px solid rgba(255, 253, 249, 0.22);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 253, 249, 0.4),
+    inset 0 -14px 28px rgba(255, 253, 249, 0.04);
+  filter: drop-shadow(7px 0 0 rgba(255, 42, 42, 0.5))
+    drop-shadow(14px 0 0 rgba(42, 127, 255, 0.4))
+    drop-shadow(-7px 0 0 rgba(42, 255, 42, 0.4));
+  animation: prism-shimmer var(--dur, 6.65s) var(--ease-focus) infinite;
+  animation-delay: calc(var(--i, 0) * -0.95s);
+}
+
+.prism-shape--circle {
+  border-radius: 9999px;
+}
+
+.prism-shape--square {
+  border-radius: 18px;
+}
+
+.prism-shape--triangle {
+  clip-path: polygon(50% 2%, 100% 100%, 0 100%);
+}
+
+.prism-shape--diamond {
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+.prism-shape--hexagon {
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0 50%);
+}
+
+.prism-shape--ring {
+  border-radius: 9999px;
+  background: transparent;
+}
+
+@keyframes prism-shimmer {
+  0%,
+  100% {
+    transform: rotate(var(--rot, 0deg)) translateY(0);
+  }
+  50% {
+    transform: rotate(var(--rot, 0deg)) translateY(-7px);
+  }
+}
+
+/* Desktop — entrada de notificaciones (globo XP) */
+@keyframes notif-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Desktop — mockup de chat (demo del bot) */
+@keyframes chat-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes typing-dot {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(-3px);
+    opacity: 1;
+  }
+}
+
+@keyframes mockup-in {
+  from {
+    opacity: 0;
+    transform: translateY(35px) scale(0.94) rotate(-1.5deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

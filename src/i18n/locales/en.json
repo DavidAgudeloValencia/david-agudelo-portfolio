@@ -1,0 +1,409 @@
+{
+  "header": {
+    "cta": "Free diagnosis"
+  },
+  "nav": {
+    "label": "Sections",
+    "services": "Services",
+    "process": "Process",
+    "pricing": "Pricing",
+    "about": "About me"
+  },
+  "hero": {
+    "label": "David Agudelo · Medellín",
+    "title": "AI-Powered Automation",
+    "subtitle": "for SMBs",
+    "subtitleLabel": "WhatsApp bots that reply 24/7, flows that fill your spreadsheets by themselves, and dashboards that tell you your sales. Fewer manual hours, more customers served.",
+    "ctaPrimary": "Book a free diagnosis",
+    "ctaSecondary": "See services",
+    "statsLabel": "Real results",
+    "scroll": "SCROLL",
+    "stats": [
+      { "value": "4+", "label": "Years full stack" },
+      { "value": "24/7", "label": "Customers answered" },
+      { "value": "1–2 wks", "label": "Real delivery time" },
+      { "value": "20 h", "label": "Saved/month per process" }
+    ]
+  },
+  "marquee": {
+    "label": "I help businesses like these",
+    "sectors": [
+      "Clinics and offices",
+      "Restaurants and cafés",
+      "Hardware stores",
+      "Workshops and builders",
+      "Gyms and spas",
+      "Pharmacies"
+    ]
+  },
+  "launch": {
+    "badge": "Launch offer",
+    "title": "WhatsApp AI bot working in 10 days",
+    "price": "$1.9M",
+    "retainer": "+ $700K/mo retainer",
+    "note": "Limited to 2 clients during the first months. In return: testimonial and video of your case.",
+    "cta": "I want this offer"
+  },
+  "services": {
+    "label": "Services",
+    "title": "What I do for your business",
+    "subtitle": "I automate your day-to-day so you can focus on selling. Every deliverable is left working with simple instructions.",
+    "items": [
+      {
+        "title": "WhatsApp bot with AI",
+        "description": "Answers your customers 24/7: quotes, appointment booking, payment links and follow-up without touching your phone.",
+        "tag": "Automation"
+      },
+      {
+        "title": "n8n workflows",
+        "description": "I connect forms, spreadsheets, your CRM, email and WhatsApp. Data moves between systems on its own.",
+        "tag": "Integration"
+      },
+      {
+        "title": "Agents with your data",
+        "description": "They answer about your catalog, prices and hours based on your own information, not generic replies.",
+        "tag": "AI"
+      },
+      {
+        "title": "Reports dashboard",
+        "description": "Sales, inventory and customers updated automatically. You see the picture; I take care of the process.",
+        "tag": "Data"
+      }
+    ]
+  },
+  "process": {
+    "label": "How I work",
+    "title": "A simple process, with clear results",
+    "items": [
+      {
+        "step": "01",
+        "title": "Free diagnosis",
+        "description": "15 min call. I identify the exact manual process that eats your time."
+      },
+      {
+        "step": "02",
+        "title": "Proposal with results",
+        "description": "I tell you exactly what fits and how many hours/month it will save you."
+      },
+      {
+        "step": "03",
+        "title": "Delivery in 1–2 weeks",
+        "description": "Setup, testing and go-live. I leave you a simple user guide."
+      },
+      {
+        "step": "04",
+        "title": "Optional retainer",
+        "description": "Continuous support and improvements with a low monthly payment, no surprises."
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Investment",
+    "title": "Clear pricing, no fine print",
+    "subtitle": "Each project is quoted by scope. These are the starting references.",
+    "featured": "Most requested",
+    "disclaimer": "All amounts in COP. Each project starts with a 50% down payment. E-invoicing included.",
+    "items": [
+      {
+        "name": "Diagnosis",
+        "amount": "$0",
+        "note": "No cost",
+        "features": ["Review of 1 manual process", "Proposal with results", "No commitment"],
+        "ctaLabel": "Book it",
+        "ctaMessage": "Hi David, I want the free automation diagnosis."
+      },
+      {
+        "name": "AI Automation",
+        "amount": "$2 – 4 M",
+        "note": "Project · 50/50 payment",
+        "featured": true,
+        "features": ["WhatsApp bot + AI or n8n flow", "Go-live and simple user guide", "Delivery in 1–2 weeks", "Optional monthly retainer"],
+        "ctaLabel": "Request a quote",
+        "ctaMessage": "Hi David, I'm interested in AI automation."
+      },
+      {
+        "name": "Monthly retainer",
+        "amount": "$500K – 1.5M",
+        "note": "Per month · from month 1",
+        "features": ["Ongoing maintenance and improvements", "New answers for the bot", "Additional integration", "Priority support"],
+        "ctaLabel": "Learn more",
+        "ctaMessage": "Hi David, I want to know more about the monthly retainer."
+      },
+      {
+        "name": "Custom development",
+        "amount": "$4 – 10 M",
+        "note": "Complete systems · milestone payments",
+        "features": ["Quoters, inventory, invoicing", "Web app or admin panel", "Milestone payment 50/30/20"],
+        "ctaLabel": "Request a quote",
+        "ctaMessage": "Hi David, I'm interested in AI automation."
+      }
+    ]
+  },
+  "demo": {
+    "label": "Demo",
+    "title": "This is how the bot answers your customers",
+    "subtitle": "This is what a customer who writes to you at any hour will see: instant reply, quoting and scheduling, without touching your phone.",
+    "placeholderTitle": "Demo video — coming soon",
+    "placeholderBody": "While I record it, book the free diagnosis and I'll show you the bot answering live, using your own business as an example.",
+    "cta": "See the demo live (free)",
+    "videoFallback": "Your browser doesn't support video.",
+    "videoDownload": "Download the demo"
+  },
+  "about": {
+    "label": "About me",
+    "title": "David, a developer who turns manual processes into automations",
+    "caption": "Full stack developer · Automation and AI",
+    "p1": "I come from 4+ years as a full stack developer at Movilbox (PHP/Laravel, React, SQL) and today I apply AI and automation so business owners don't have to stay glued to their phones.",
+    "p2": "My method: free diagnosis of 1 process → proposal with measurable results → delivery in 1–2 weeks → continuous improvement retainer.",
+    "highlights": [
+      "4+ years as a full stack developer (PHP/Laravel, React, SQL)",
+      "Active training in n8n, prompt engineering, ML and Big Data",
+      "Registered individual with business license and Simplified Tax Regime",
+      "E-invoicing: 100% legal with a chat-confirmed agreement"
+    ],
+    "ctaWhatsApp": "Message me on WhatsApp",
+    "ctaLinkedIn": "See my LinkedIn"
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Does answering messages or writing quotes eat your time?",
+    "subtitle": "Message me on WhatsApp, tell me the process that tires you the most, and I'll propose how to automate it.",
+    "cta": "Book my free diagnosis",
+    "linkedin": "LinkedIn",
+    "small": "David Agudelo · Medellín, Colombia · Automation and AI"
+  },
+  "footer": {
+    "rights": "© 2026 David Agudelo Valencia · Made with passion from Medellín",
+    "stack": "Laravel · React · n8n · AI"
+  },
+"wa": {
+    "diagnostic": "Hi David, I want the free automation diagnosis.",
+    "quote": "Hi David, I'm interested in AI automation.",
+    "retainer": "Hi David, I'd like to know more about the monthly retainer.",
+    "launch": "Hi David, I'm interested in the launch offer (bot in 10 days)."
+  },
+  "desktop": {
+    "openCta": "View interactive portfolio",
+    "closeLabel": "Exit desktop",
+    "apps": {
+      "finder": "File Explorer",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    },
+    "emailSubject": "Hi David, writing from your portfolio",
+    "wa": "Hi David, I saw your desktop and I want the free automation diagnosis.",
+    "finder": {
+      "windowTitle": "Resume — David Agudelo",
+      "emptyFolder": "This folder is empty",
+      "folders": [
+        {
+          "id": "about",
+          "name": "About",
+          "notes": [
+            {
+              "title": "Profile",
+              "body": "Full-stack developer with 4+ years of experience turning manual processes into AI automations for SMBs in Medellín."
+            }
+          ]
+        },
+        {
+          "id": "experience",
+          "name": "Experience",
+          "notes": [
+            {
+              "title": "Full-stack developer — Movilbox",
+              "body": "4+ years building with PHP/Laravel, React and SQL. Today I apply AI and automation so business owners don't have to be glued to their phones."
+            },
+            {
+              "title": "Freelance automation",
+              "body": "AI WhatsApp bots, n8n workflows and report dashboards delivered in 1–2 weeks for clinics, restaurants, hardware stores, workshops, gyms and pharmacies."
+            }
+          ]
+        },
+        {
+          "id": "education",
+          "name": "Education",
+          "notes": [
+            {
+              "title": "Active learning",
+              "body": "n8n, prompt engineering, ML and Big Data — learning in real time to apply the latest to your processes."
+            }
+          ]
+        },
+        {
+          "id": "skills",
+          "name": "Skills",
+          "notes": [
+            {
+              "title": "Technical",
+              "body": "PHP/Laravel · React · SQL · n8n · AI and agents · WhatsApp integration · Report dashboards"
+            }
+          ]
+        },
+        {
+          "id": "projects",
+          "name": "Projects",
+          "notes": [
+            {
+              "title": "AI WhatsApp bot",
+              "body": "Replies 24/7: quotes, books appointments, charges by link and follows up without you touching your phone."
+            },
+            {
+              "title": "n8n workflows and dashboards",
+              "body": "Forms, spreadsheets, CRM, email and WhatsApp connected. Sales, inventory and customers on an automatic dashboard."
+            }
+          ]
+        },
+        {
+          "id": "contact",
+          "name": "Contact",
+          "notes": [
+            {
+              "title": "WhatsApp",
+              "body": "304 671 0563 — the bot replies 24/7"
+            },
+            {
+              "title": "Email",
+              "body": "david.agudelo.valencia@gmail.com"
+            },
+            {
+              "title": "LinkedIn",
+              "body": "/in/david-agudelo-valencia"
+            },
+            {
+              "title": "Location",
+              "body": "Medellín, Colombia"
+            }
+          ]
+        }
+      ]
+    },
+    "taskbar": {
+      "start": "Start",
+      "shutdown": "Shut down",
+      "tech": ["Laravel", "React", "SQL", "n8n", "OpenAI", "WhatsApp"]
+    },
+    "profile": {
+      "title": "FULL-STACK · AI AUTOMATION",
+      "description": "Full-stack developer turning manual processes into AI automations for SMBs in Medellín. 4+ years building with PHP/Laravel, React and SQL.",
+      "moreAbout": "MORE ABOUT ME"
+    },
+    "icons": {
+      "projects": "Projects",
+      "notes": "Notes",
+      "publications": "Publications",
+      "cv": "Profile / Resume",
+      "demo": "Demo",
+      "gallery": "Gallery"
+    },
+    "windows": {
+      "aboutTitle": "About this desktop",
+      "aboutBody": "Interactive portfolio built with React, Tailwind CSS and TypeScript. Design, content and code by David Agudelo Valencia — Medellín, Colombia.",
+      "projectsTitle": "Projects",
+      "notesTitle": "Notes and sketches",
+      "publicationsTitle": "Publications",
+      "publications": [
+        {
+          "title": "My LinkedIn profile",
+          "body": "Professional experience and connections."
+        },
+        {
+          "title": "My GitHub profile",
+          "body": "Code and public experiments."
+        }
+      ],
+      "demoTitle": "Bot demo",
+      "galleryTitle": "Gallery",
+      "galleryEmpty": "No projects in the gallery yet.",
+      "demoCta": "Watch live demo (free)",
+      "minimizeLabel": "Minimize",
+      "maximizeLabel": "Maximize",
+      "restoreLabel": "Restore",
+      "closeLabel": "Close window"
+    },
+    "panel": {
+      "label": "DA."
+    },
+    "widgets": {
+      "clock": {
+        "title": "Clock"
+      },
+      "weather": {
+        "title": "Weather · Medellín",
+        "loading": "Loading…",
+        "error": "No data",
+        "clear": "Clear",
+        "clouds": "Cloudy",
+        "rain": "Rain",
+        "snow": "Snow",
+        "storm": "Storm",
+        "fog": "Fog"
+      },
+      "music": {
+        "nowPlaying": "Now Playing",
+        "title": "Music",
+        "link": "Open in Spotify",
+        "url": "https://open.spotify.com/playlist/47F8GYRkS01waEogPB0ehq"
+      }
+    },
+"notifications": {
+      "title": "Notifications",
+      "dismiss": "Dismiss",
+      "messages": [
+        "Launch offer: WhatsApp bot from $1.9M.",
+        "Free diagnostic confirmed: $0, no commitment.",
+        "Retainer available from $500K/month, priority support.",
+        "Automation projects from $2M, delivery in 1–2 weeks.",
+        "Custom development from $4M, milestone payments."
+      ]
+    },
+    "demoChat": {
+      "botName": "David Agudelo",
+      "subtitle": "AI BOT · online",
+      "typing": "typing",
+      "today": "Today",
+      "encrypted": "Messages are end-to-end encrypted",
+      "placeholder": "Message",
+      "caption": "This is what a customer sees when they message at any hour: instant AI replies, without you touching your phone.",
+      "messages": [
+        {
+          "from": "user",
+          "text": "Hi, can you quote a bot for my business? 🏪",
+          "time": "11:47 PM"
+        },
+        {
+          "from": "bot",
+          "text": "Hi! 👋 I'm David Agudelo's bot and I reply at any hour.",
+          "time": "11:47 PM"
+        },
+        {
+          "from": "bot",
+          "text": "Here are your options: 1️⃣ WhatsApp bot from $1.9M · 2️⃣ Free diagnostic $0 · 3️⃣ Retainer from $500K/month",
+          "time": "11:47 PM"
+        },
+        {
+          "from": "user",
+          "text": "The free diagnostic 👀",
+          "time": "11:48 PM"
+        },
+        {
+          "from": "bot",
+          "text": "Perfect ✅ What does your business do?",
+          "time": "11:48 PM"
+        },
+        {
+          "from": "user",
+          "text": "I have a clothing store 🛍️",
+          "time": "11:48 PM"
+        },
+        {
+          "from": "bot",
+          "text": "Done ✔ I scheduled your diagnostic for tomorrow 10 AM. A human will contact you to confirm.",
+          "time": "11:48 PM"
+        }
+      ]
+    }
+  }
+}

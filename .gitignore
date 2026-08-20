@@ -1,0 +1,40 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Documentos de negocio y CV (solo locales, OneDrive)
+01_Manifiesto_Marca.md
+02_Servicios_y_Precios.md
+03_Plan_90_Dias.md
+04_Formalizacion_Legal.md
+05_LinkedIn_Estrategia.md
+06_Outreach_Scripts.md
+07_Plantilla_Clientes.csv
+08_Checklists_Semanales.md
+DavidAgudeloValencia_CV_ATS.pdf
+DavidAgudeloValenca_FullStack_Developer_PHP_JS_IA.png
+promp_demo_whatsapp.md
+
+# Frames fuente del wallpaper (solo locales; regenerar con npm run catbg)
+/cat_bg/
