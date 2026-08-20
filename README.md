@@ -1,6 +1,6 @@
 # david-agudelo-portfolio — Sitio de David Agudelo
 
-[![CI](https://github.com/davidagudelo/david-agudelo-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/davidagudelo/david-agudelo-portfolio/actions/workflows/ci.yml)
+[![CI](https://github.com/DavidAgudeloValencia/david-agudelo-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/DavidAgudeloValencia/david-agudelo-portfolio/actions/workflows/ci.yml)
 
 Landing page de servicios (automatización con IA para PYMES de Medellín) + escritorio interactivo estilo Windows.
 Stack: **React + TypeScript + Vite + Tailwind CSS v4 + shadcn/ui (Base UI) + lucide-react**.
