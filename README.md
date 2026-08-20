@@ -31,25 +31,22 @@ npm run preview    # probar el build localmente
 - **CI**: en cada PR y push a `main`/`develop` corre `npm run lint` + `npm run build`
   (`.github/workflows/ci.yml`).
 
-## Subir a Netlify (5 minutos)
+## Deploy (Cloudflare Pages)
 
-1. Crea cuenta gratis en [netlify.com](https://app.netlify.com).
-2. **Opción A (rápida)**: ejecuta `npm run build` y arrastra la carpeta `dist/`
-   al dashboard (**Drag and drop**) → publica al instante.
-3. **Opción B (recomendada, repositorio)**: conecta el repo, y Netlify usará
-   `netlify.toml` (build: `npm run build`, publish: `dist`).
-4. Obtienes una URL tipo `https://nombre-aleatorio.netlify.app`.
+1. Crea cuenta en [dash.cloudflare.com](https://dash.cloudflare.com) y en **Workers & Pages → Create → Pages → Connect to Git**.
+2. Conecta el repo `david-agudelo-portfolio` y configura:
+   - Build command: `npm ci && npm run build`
+   - Build output directory: `dist`
+3. Al primer push a `main` se publica automáticamente en `https://<proyecto>.pages.dev`.
+4. En **Custom domains**, agrega `davidagudelo.com` (y `www`) y apunta el DNS en tu registrador a Cloudflare (o usa el DNS de Cloudflare: añade los records `CNAME davidagudelo.com → <proyecto>.pages.dev` y `www → <proyecto>.pages.dev`).
+5. Los headers de seguridad y caché están en `public/_headers` (equivalentes a los que antes estaban en `netlify.toml`).
 
-### Dominio propio (pendiente)
+### SEO (dominio real)
 
-El sitio usa `tudominio.com` como placeholder en meta tags, canonical, Open
-Graph y `robots.txt`. Cuando compres el dominio (ej: `davidagudelo.com`):
-
-1. En Netlify: **Domain settings → Add custom domain**.
-2. En tu registrador, apunta un CNAME de `www`/raíz → `tu-sitio.netlify.app`.
-3. Reemplaza `tudominio.com` por el dominio real en:
-   - `index.html` (canonical, OG image, JSON-LD)
-   - `public/robots.txt` (Sitemap)
+El sitio ya usa `davidagudelo.com` en canonical, Open Graph, Twitter, JSON-LD,
+`robots.txt` y `sitemap.xml`. Después del deploy, verifica en
+[Search Console](https://search.google.com/search-console) la propiedad y
+envía el sitemap.
 
 ## Personalizar
 
@@ -61,7 +58,7 @@ Graph y `robots.txt`. Cuando compres el dominio (ej: `davidagudelo.com`):
 | Foto de perfil | Reemplaza `src/assets/foto-perfil.jpg` |
 | Video demo del bot | Coloca `demo.mp4` en `public/` (y opcional `demo-poster.png`). La sección `#demo` lo reproduce automáticamente; si no existe, la ventana Demo del escritorio muestra el mockup de chat del bot (`ChatMockup`) |
 | Email y GitHub del escritorio | `src/data/content.ts` → `SITE.email` y `SITE.github` (dados: email `david.agudelo.valencia@gmail.com`, GitHub `https://github.com/DavidAgudeloValencia`) |
-| Galería de proyectos del escritorio | Agrega la imagen en `public/gallery/` con el **link en el nombre del archivo** (ej: `byexlot.com.png` → abre `https://byexlot.com`). Se lista sola en la ventana Galería; clic → abre el proyecto en pestaña nueva |
+| Galería de proyectos del escritorio | Agrega la imagen en `public/gallery/` con el **link en el nombre del archivo** (ej: `davidagudelo.com.png` → abre `https://davidagudelo.com`). Se lista sola en la ventana Galería; clic → abre el proyecto en pestaña nueva |
 | Playlist de Spotify del escritorio | `src/data/content.ts` → `SITE.spotifyPlaylist` (ID de la playlist; hoy `47F8GYRkS01waEogPB0ehq`) |
 | Fondo animado del escritorio | Reemplaza los fotogramas en `cat_bg/` (`ezgif-frame-001.png`…`ezgif-frame-026.png`, 16:9, cualquier resolución) y ejecuta `npm run catbg` — genera con ffmpeg la **WebP animada** `public/cat_bg/cat_bg.webp` (1280×720, 200ms/fotograma, ~5s en loop infinito, optimizada) y el estático `cat_static.webp` para `prefers-reduced-motion` |
 | Contenido del Finder (CV en carpetas) | `src/i18n/locales/es.json` y `en.json` → `desktop.finder.folders` |

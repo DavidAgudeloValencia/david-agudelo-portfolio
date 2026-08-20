@@ -8,7 +8,7 @@ export const SITE = {
   github: "https://github.com/DavidAgudeloValencia",
   linkedin: "https://www.linkedin.com/in/david-agudelo-valencia",
   spotifyPlaylist: "47F8GYRkS01waEogPB0ehq",
-  domain: "tudominio.com",
+  domain: "davidagudelo.com",
 }
 
 export const waLink = (message: string) =>

@@ -81,7 +81,7 @@ más columnas cuando falta altura. Cada carpeta abre una ventana:
 | Carpeta ámbar | Publicaciones | Enlaces reales a LinkedIn y GitHub |
 | Carpeta ámbar | Perfil / CV | Ventana Explorer con carpetas del CV |
 | Carpeta ámbar | Demo | Mockup del bot en WhatsApp (conversación realista: cotización → diagnóstico gratis → cita) + video `demo.mp4` si existe, con CTA de WhatsApp |
-| Carpeta ámbar | Galería | Imágenes de proyectos de `public/gallery/` (el nombre del archivo es el link, ej. `byexlot.com.png` → `https://byexlot.com`); clic abre el proyecto |
+| Carpeta ámbar | Galería | Imágenes de proyectos de `public/gallery/` (el nombre del archivo es el link, ej. `davidagudelo.com.png` → `https://davidagudelo.com`); clic abre el proyecto |
 
 **Componente:** `src/components/desktop/DesktopIcons.tsx` + ventanas
 (`InfoWindow`, `FinderWindow`, `PublicationsWindow`, `DemoWindow`).
