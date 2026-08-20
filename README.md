@@ -35,11 +35,19 @@ npm run preview    # probar el build localmente
 
 1. Crea cuenta en [dash.cloudflare.com](https://dash.cloudflare.com) y en **Workers & Pages → Create → Pages → Connect to Git**.
 2. Conecta el repo `david-agudelo-portfolio` y configura:
-   - Build command: `npm ci && npm run build`
+   - Preset: **React (Vite)** — Build command: `npm run build`
    - Build output directory: `dist`
+   - Deja el campo *Install command* vacío (Cloudflare instala las dependencias automáticamente con `npm install`).
+   - Node.js: el archivo `.node-version` del repo fija la versión `22` (Cloudflare lo respeta; también puedes poner la variable de entorno `NODE_VERSION=22` en **Settings → Environment variables**). Es obligatorio: Vite 8 requiere Node 22 y el build image antiguo trae Node 18.
 3. Al primer push a `main` se publica automáticamente en `https://<proyecto>.pages.dev`.
 4. En **Custom domains**, agrega `davidagudelo.com` (y `www`) y apunta el DNS en tu registrador a Cloudflare (o usa el DNS de Cloudflare: añade los records `CNAME davidagudelo.com → <proyecto>.pages.dev` y `www → <proyecto>.pages.dev`).
 5. Los headers de seguridad y caché están en `public/_headers` (equivalentes a los que antes estaban en `netlify.toml`).
+
+### Re-desplegar / deploy manual
+
+- **Automático**: cada push a `main` dispara un build nuevo (el CI de GitHub corre lint + build aparte).
+- **Dashboard**: proyecto → **Deployments** → *Retry deployment* sobre cualquier deploy anterior, o **Create deployment** seleccionando la rama.
+- **CLI** (si tienes `wrangler`): `npx wrangler pages deploy dist --project-name=<proyecto>`.
 
 ### SEO (dominio real)
 
