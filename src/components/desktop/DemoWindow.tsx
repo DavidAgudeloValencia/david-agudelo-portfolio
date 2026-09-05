@@ -35,7 +35,7 @@ export function DemoWindow({
       className="w-[min(520px,92vw)]"
     >
       <div className="flex flex-col items-center gap-3 p-4">
-        <ChatMockup />
+        <ChatMockup size="sm" />
         <p className="mx-auto max-w-sm text-center text-[13px] leading-relaxed text-[#4a4a38]">
           {t("desktop.demoChat.caption")}
         </p>

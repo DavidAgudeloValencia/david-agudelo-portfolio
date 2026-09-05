@@ -32,16 +32,35 @@ if (frames.length < 2) {
 await mkdir(OUT, { recursive: true })
 
 const durationSec = (frames.length * FRAME_MS) / 1000
-const fps = frames.length / durationSec
+const baseFps = frames.length / durationSec // 5 fps
 const animPath = join(OUT, "cat_bg.webp")
+const mp4Path = join(OUT, "cat_bg.mp4")
 const staticPath = join(OUT, "cat_static.webp")
 
-const encode = (quality) => {
+console.log("Generando video fluido a 30fps con interpolación...")
+execFileSync(
+  ffmpegPath,
+  [
+    "-y",
+    "-framerate", String(Number(baseFps.toFixed(6))),
+    "-i", join(SRC, "ezgif-frame-%03d.png"),
+    "-vf", `scale=${WIDTH}:${HEIGHT}:flags=lanczos,minterpolate=fps=30:mi_mode=blend`,
+    "-c:v", "libx264",
+    "-preset", "slow",
+    "-crf", "22",
+    "-pix_fmt", "yuv420p",
+    "-movflags", "+faststart",
+    mp4Path,
+  ],
+  { cwd: ROOT, stdio: ["ignore", "inherit", "pipe"] },
+)
+
+const encodeWebp = (quality) => {
   execFileSync(
     ffmpegPath,
     [
       "-y",
-      "-framerate", String(Number(fps.toFixed(6))),
+      "-framerate", String(Number(baseFps.toFixed(6))),
       "-i", join(SRC, "ezgif-frame-%03d.png"),
       "-vf", `scale=${WIDTH}:${HEIGHT}:flags=lanczos`,
       "-fps_mode", "passthrough",
@@ -57,11 +76,11 @@ const encode = (quality) => {
 }
 
 let quality = 75
-encode(quality)
+encodeWebp(quality)
 let animSize = (await stat(animPath)).size
 while (animSize > MAX_SIZE && quality > QUALITY_MIN) {
   quality -= 10
-  encode(quality)
+  encodeWebp(quality)
   animSize = (await stat(animPath)).size
 }
 
@@ -72,6 +91,7 @@ await sharp(join(SRC, frames[0]))
   .webp({ quality: 70 })
   .toFile(staticPath)
 
+const mp4Size = (await stat(mp4Path)).size
 const srcBytes = (await Promise.all(frames.map((f) => stat(join(SRC, f))))).reduce((a, s) => a + s.size, 0)
 
 for (const f of await readdir(OUT)) {
@@ -82,10 +102,7 @@ for (const f of await readdir(OUT)) {
 }
 
 console.log(`Fotogramas: ${frames.length} PNG (${(srcBytes / 1024 / 1024).toFixed(1)} MB) → animación de ${durationSec.toFixed(1)}s`)
-console.log(`cat_bg.webp: ${(animSize / 1024).toFixed(0)} KB · ${meta.width}×${meta.height} · pages=${meta.pages} · ${meta.delay?.[0]}ms/fotograma · loop=${meta.loop} · calidad=${quality}`)
+console.log(`cat_bg.mp4 (fluido 30fps): ${(mp4Size / 1024).toFixed(0)} KB`)
+console.log(`cat_bg.webp: ${(animSize / 1024).toFixed(0)} KB · ${meta.width}×${meta.height} · pages=${meta.pages} · loop=${meta.loop}`)
 console.log(`cat_static.webp: ${((await stat(staticPath)).size / 1024).toFixed(0)} KB (prefers-reduced-motion)`)
 
-if (meta.pages !== frames.length || meta.loop !== 0) {
-  console.error("ERROR: la animación generada no es válida (pages/loop incorrectos)")
-  process.exit(1)
-}

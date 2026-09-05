@@ -60,7 +60,7 @@ envía el sitemap.
 
 | Qué | Dónde |
 |---|---|
-| Número de WhatsApp | `src/data/content.ts` → `SITE.whatsapp` (hoy `573046710563`) |
+| Número de WhatsApp | `src/data/content.ts` → `SITE.whatsapp` (hoy `573052580913` / `+57 305 258 0913`) |
 | URL de LinkedIn | `src/data/content.ts` → `SITE.linkedin` |
 | Textos de la UI (ES y EN) | `src/i18n/locales/es.json` y `en.json` (mensajes de WhatsApp en `wa.*`) |
 | Foto de perfil | Reemplaza `src/assets/foto-perfil.jpg` |

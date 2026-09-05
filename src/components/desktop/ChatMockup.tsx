@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react"
+import { useEffect, useMemo, useRef, useState } from "react"
 import { useTranslation } from "react-i18next"
 import {
   ArrowLeft,
@@ -39,6 +39,7 @@ export function ChatMockup({
 }: {
   autoPlay?: boolean
   className?: string
+  size?: "sm" | "lg"
 }) {
   const { t } = useTranslation()
   const messages = useMemo(
@@ -48,6 +49,7 @@ export function ChatMockup({
   const [visible, setVisible] = useState<DemoMessage[]>([])
   const [typing, setTyping] = useState(false)
   const [cycle, setCycle] = useState(0)
+  const scrollRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     if (!autoPlay) {
@@ -90,14 +92,20 @@ export function ChatMockup({
     }
   }, [autoPlay, messages, cycle])
 
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTop = scrollRef.current.scrollHeight
+    }
+  }, [visible, typing])
+
   return (
     <div
       className={cn(
-        "relative mx-auto flex w-full max-w-[265px] items-center justify-center py-2 select-none",
+        "desktop-base relative mx-auto flex w-full max-w-[280px] items-center justify-center py-2 select-none",
         className,
       )}
     >
-      <div className="animate-[mockup-in_0.6s_cubic-bezier(0.52,0.01,0,1)_both] relative flex h-[490px] w-full transform-gpu flex-col overflow-hidden rounded-[40px] bg-neutral-900 p-2.5 transition-transform duration-300 hover:-translate-y-1.5 hover:rotate-[0.5deg] sm:h-[530px]">
+      <div className="animate-[mockup-in_0.6s_cubic-bezier(0.52,0.01,0,1)_both] relative flex h-[520px] w-full transform-gpu flex-col overflow-hidden rounded-[40px] bg-neutral-900 p-2.5 shadow-2xl transition-transform duration-300 hover:-translate-y-1.5 sm:h-[540px]">
         <div className="absolute top-24 -left-[5px] h-8 w-[2.5px] rounded-l-xs bg-neutral-700" />
         <div className="absolute top-36 -left-[5px] h-10 w-[2.5px] rounded-l-xs bg-neutral-700" />
         <div className="absolute top-48 -left-[5px] h-10 w-[2.5px] rounded-l-xs bg-neutral-700" />
@@ -128,7 +136,7 @@ export function ChatMockup({
                 />
               </div>
               <div className="flex min-w-0 flex-col">
-                <span className="max-w-[100px] truncate text-[11.5px] leading-tight font-semibold text-white">
+                <span className="max-w-[105px] truncate text-[11.5px] leading-tight font-semibold text-white">
                   {t("desktop.demoChat.botName")}
                 </span>
                 <span className="mt-0.5 text-[9.5px] leading-none font-medium text-emerald-200">
@@ -136,7 +144,7 @@ export function ChatMockup({
                 </span>
               </div>
             </div>
-            <div className="flex items-center gap-2.5 text-white/90">
+            <div className="flex items-center gap-2 text-white/90">
               <button type="button" className="hover:text-white">
                 <Video className="size-3.5" />
               </button>
@@ -149,15 +157,18 @@ export function ChatMockup({
             </div>
           </div>
 
-          <div className="relative flex min-h-0 flex-1 flex-col justify-end overflow-hidden bg-[#efeae2] p-2.5">
-            <div className="relative z-10 mx-auto mb-1.5 rounded-full bg-white/90 px-2.5 py-0.5 text-[9px] font-medium text-neutral-600">
+          <div
+            ref={scrollRef}
+            className="relative flex min-h-0 flex-1 flex-col overflow-y-auto bg-[#efeae2] p-2.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          >
+            <div className="relative z-10 mx-auto mb-1.5 rounded-full bg-white/90 px-2.5 py-0.5 text-[9px] font-medium text-neutral-600 shadow-2xs">
               {t("desktop.demoChat.today")}
             </div>
-            <div className="relative z-10 mx-auto mb-1.5 flex max-w-[85%] items-center gap-1 rounded-md bg-[#fff8e7] px-2 py-0.5 text-[8.5px] leading-tight text-[#54656f] shadow-[0_1px_1px_rgba(0,0,0,0.06)]">
+            <div className="relative z-10 mx-auto mb-1.5 flex max-w-[88%] items-center gap-1 rounded-md bg-[#fff8e7] px-2 py-0.5 text-[8.5px] leading-tight text-[#54656f] shadow-[0_1px_1px_rgba(0,0,0,0.06)]">
               <Lock className="size-2.5 shrink-0" />
               <span>{t("desktop.demoChat.encrypted")}</span>
             </div>
-            <div className="relative z-10 flex flex-1 flex-col justify-end space-y-1.5 overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            <div className="relative z-10 flex flex-1 flex-col justify-end space-y-1.5">
               {visible.map((msg, i) => {
                 const isUser = msg.from === "user"
                 return (
@@ -170,7 +181,7 @@ export function ChatMockup({
                   >
                     <div
                       className={cn(
-                        "relative flex max-w-[85%] flex-col rounded-xl px-2.5 py-1 text-[11px]",
+                        "relative flex max-w-[86%] flex-col rounded-xl px-2.5 py-1 text-[11px] shadow-2xs",
                         isUser
                           ? "rounded-tr-none bg-[#dcf8c6]"
                           : "rounded-tl-none bg-white",
@@ -193,7 +204,7 @@ export function ChatMockup({
               })}
               {typing && (
                 <div className="animate-[chat-in_0.2s_ease-out_both] flex items-center justify-start">
-                  <div className="flex items-center gap-1.5 rounded-xl rounded-tl-none bg-white px-3 py-2">
+                  <div className="flex items-center gap-1.5 rounded-xl rounded-tl-none bg-white px-3 py-2 shadow-2xs">
                     <span className="text-[10px] font-semibold text-emerald-600">
                       {t("desktop.demoChat.typing")}
                     </span>
@@ -219,7 +230,7 @@ export function ChatMockup({
             >
               <Smile className="size-4" />
             </button>
-            <div className="flex flex-1 items-center justify-between rounded-full bg-white px-3 py-1.5 text-xs text-neutral-400">
+            <div className="flex flex-1 items-center justify-between rounded-full bg-white px-3 py-1.5 text-xs text-neutral-400 shadow-2xs">
               <span className="truncate">{t("desktop.demoChat.placeholder")}</span>
               <div className="flex items-center gap-2">
                 <button type="button" className="hover:text-neutral-600">

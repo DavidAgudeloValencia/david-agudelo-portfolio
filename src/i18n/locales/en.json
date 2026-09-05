@@ -143,11 +143,22 @@
     "label": "Demo",
     "title": "This is how the bot answers your customers",
     "subtitle": "This is what a customer who writes to you at any hour will see: instant reply, quoting and scheduling, without touching your phone.",
-    "placeholderTitle": "Demo video — coming soon",
-    "placeholderBody": "While I record it, book the free diagnosis and I'll show you the bot answering live, using your own business as an example.",
-    "cta": "See the demo live (free)",
-    "videoFallback": "Your browser doesn't support video.",
-    "videoDownload": "Download the demo"
+    "cta": "Test the bot on WhatsApp",
+    "badge": "Interactive simulation",
+    "features": {
+      "speed": {
+        "title": "Reply in < 2 seconds",
+        "desc": "Immediate 24/7 customer care without delays or waiting clients."
+      },
+      "ai": {
+        "title": "AI Quoting & Lead Qualification",
+        "desc": "Understands what the client needs, sends quotes, and answers questions using your business data."
+      },
+      "agenda": {
+        "title": "Automatic Scheduling",
+        "desc": "Schedules appointments or diagnostic calls directly without manual intervention."
+      }
+    }
   },
   "about": {
     "label": "About me",
@@ -174,9 +185,74 @@
   },
   "footer": {
     "rights": "© 2026 David Agudelo Valencia · Made with passion from Medellín",
-    "stack": "Laravel · React · n8n · AI"
+    "stack": "Laravel · React · n8n · AI",
+    "privacy": "Privacy Policy"
   },
-"wa": {
+  "privacy": {
+    "title": "Privacy Policy & Data Processing",
+    "subtitle": "Legal compliance for WhatsApp Business API, Artificial Intelligence, and Personal Data Protection (Law 1581 of 2012 / Meta Platforms).",
+    "lastUpdated": "Last updated: September 2026",
+    "backHome": "Back to Home",
+    "sections": [
+      {
+        "title": "1. Identity of the Data Controller",
+        "content": "The party responsible for processing personal data collected through this website and the automated WhatsApp assistant is David Agudelo Valencia (hereinafter 'the Controller' or 'David Agudelo'), an individual based in Medellín, Colombia. Contact email: david.agudelo.valencia@gmail.com. Contact WhatsApp: +57 305 258 0913."
+      },
+      {
+        "title": "2. Purpose of Data Processing",
+        "content": "Data provided voluntarily by users will be processed for the following purposes:",
+        "bullets": [
+          "Immediate response to inquiries, consulting, and quotes regarding software development and AI automation services.",
+          "Scheduling and confirmation of free diagnostic sessions.",
+          "Execution of automated conversational workflows via the WhatsApp bot to streamline response times.",
+          "Commercial follow-up and technical support related to evaluated or contracted projects."
+        ]
+      },
+      {
+        "title": "3. Personal Data Collected",
+        "content": "Through interactions with the website or WhatsApp bot, we only collect necessary information:",
+        "bullets": [
+          "Mobile phone number (WhatsApp ID).",
+          "Profile name visible on WhatsApp and name provided during the conversation.",
+          "Message content and business requirements sent by the user.",
+          "Technical message delivery metadata (timestamp and delivery status provided by Meta)."
+        ]
+      },
+      {
+        "title": "4. Meta Platforms Integration & Tech Providers",
+        "content": "To operate the intelligent assistant, we use the WhatsApp Cloud API provided by Meta Platforms, Inc., alongside workflow automation and AI platforms (n8n, OpenAI API). These platforms process requests in accordance with rigorous international security and privacy policies. We do not sell, rent, or transfer your personal data to unauthorized third parties."
+      },
+      {
+        "title": "5. User Rights (Habeas Data / Law 1581 of 2012)",
+        "content": "Under Colombian legislation (Law 1581 of 2012 and Decree 1377 of 2013) and international data protection standards, you have the right to:",
+        "bullets": [
+          "Know, update, and rectify your personal data at any time.",
+          "Request proof of the authorization granted.",
+          "Be informed about how your personal data has been used.",
+          "Revoke authorization and/or request deletion of your data from our records.",
+          "Access your processed personal data free of charge."
+        ]
+      },
+      {
+        "title": "6. Data Deletion Instructions",
+        "content": "In compliance with Meta Developer Platform requirements and privacy regulations, any user may request immediate and permanent deletion of their personal data via the following channels:",
+        "bullets": [
+          "Sending an email to david.agudelo.valencia@gmail.com with subject 'Personal Data Deletion' indicating your phone number.",
+          "Sending a direct message to our WhatsApp (+57 305 258 0913) with the text 'DELETE MY DATA'."
+        ],
+        "footerNote": "Requests will be processed within a maximum of 48 business hours, confirming the irreversible removal of records."
+      },
+      {
+        "title": "7. Security and Confidentiality",
+        "content": "We implement technical and organizational measures to protect information against unauthorized access, loss, or alteration. All communication across WhatsApp and the web is encrypted using industry-standard SSL/TLS protocols."
+      },
+      {
+        "title": "8. Amendments to the Privacy Policy",
+        "content": "We reserve the right to update this privacy policy to reflect legislative updates or technical requirements of the Meta platform. The active version will always remain accessible at this URL."
+      }
+    ]
+  },
+  "wa": {
     "diagnostic": "Hi David, I want the free automation diagnosis.",
     "quote": "Hi David, I'm interested in AI automation.",
     "retainer": "Hi David, I'd like to know more about the monthly retainer.",

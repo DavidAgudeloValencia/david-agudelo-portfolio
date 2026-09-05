@@ -143,11 +143,22 @@
     "label": "Demo",
     "title": "Así responde el bot a tus clientes",
     "subtitle": "Esto es lo que verá un cliente que te escribe a cualquier hora: respuesta inmediata, cotización y agenda, sin que toques el celular.",
-    "placeholderTitle": "Video de la demo — se agrega pronto",
-    "placeholderBody": "Mientras lo grabo, agenda el diagnóstico gratis y te muestro el bot respondiendo en vivo, con tu propio negocio como ejemplo.",
-    "cta": "Ver demo en vivo (gratis)",
-    "videoFallback": "Tu navegador no soporta video.",
-    "videoDownload": "Descarga el demo"
+    "cta": "Probar el bot en WhatsApp",
+    "badge": "Simulación interactiva",
+    "features": {
+      "speed": {
+        "title": "Respuesta en < 2 segundos",
+        "desc": "Atención inmediata 24/7 sin demoras ni clientes esperando."
+      },
+      "ai": {
+        "title": "Cotización y Calificación con IA",
+        "desc": "Entiende lo que el cliente necesita, envía precios y responde dudas con tus propios datos."
+      },
+      "agenda": {
+        "title": "Agendamiento automático",
+        "desc": "Agenda citas o llamadas de diagnóstico directamente sin intervención manual."
+      }
+    }
   },
   "about": {
     "label": "Sobre mí",
@@ -174,7 +185,72 @@
   },
   "footer": {
     "rights": "© 2026 David Agudelo Valencia · Hecho con pasión desde Medellín",
-    "stack": "Laravel · React · n8n · IA"
+    "stack": "Laravel · React · n8n · IA",
+    "privacy": "Política de Privacidad"
+  },
+  "privacy": {
+    "title": "Política de Privacidad y Tratamiento de Datos",
+    "subtitle": "Cumplimiento legal para WhatsApp Business API, Inteligencia Artificial y Protección de Datos Personales (Ley 1581 de 2012 / Meta Platforms).",
+    "lastUpdated": "Última actualización: Septiembre de 2026",
+    "backHome": "Volver al inicio",
+    "sections": [
+      {
+        "title": "1. Identidad del Responsable del Tratamiento",
+        "content": "El responsable del tratamiento de los datos personales recopilados a través de este sitio web y del asistente automatizado de WhatsApp es David Agudelo Valencia (en adelante, 'el Titular' o 'David Agudelo'), persona natural con domicilio en Medellín, Colombia. Correo de contacto: david.agudelo.valencia@gmail.com. WhatsApp de contacto: +57 305 258 0913."
+      },
+      {
+        "title": "2. Finalidad del Tratamiento de Datos",
+        "content": "Los datos proporcionados voluntariamente por el usuario serán tratados con las siguientes finalidades:",
+        "bullets": [
+          "Atención inmediata de consultas, asesorías y cotizaciones sobre servicios de desarrollo de software y automatización con IA.",
+          "Agendamiento y confirmación de sesiones de diagnóstico gratuitas.",
+          "Ejecución de flujos conversacionales automatizados a través del bot de WhatsApp para optimizar el tiempo de respuesta.",
+          "Seguimiento comercial y soporte técnico relacionado con los proyectos contratados o en evaluación."
+        ]
+      },
+      {
+        "title": "3. Datos Personales Recopilados",
+        "content": "A través de la interacción con el sitio web o el bot de WhatsApp, recopilamos únicamente los datos necesarios:",
+        "bullets": [
+          "Número de teléfono móvil (WhatsApp ID).",
+          "Nombre de perfil visible en WhatsApp y nombre proporcionado en la conversación.",
+          "Contenido de los mensajes y requerimientos comerciales enviados por el usuario.",
+          "Metadatos técnicos de entrega de mensajes (fecha, hora y estado de entrega proporcionados por Meta)."
+        ]
+      },
+      {
+        "title": "4. Integración con Meta Platforms y Proveedores Tecnológicos",
+        "content": "Para operar el asistente inteligente, utilizamos la API de WhatsApp Cloud provista por Meta Platforms, Inc. y plataformas de automatización e inteligencia artificial (n8n, OpenAI API). Estas plataformas procesan las solicitudes de acuerdo con estrictas políticas de privacidad y seguridad internacional. No vendemos, alquilamos ni transferimos tus datos a terceros con fines publicitarios no autorizados."
+      },
+      {
+        "title": "5. Derechos del Titular (Habeas Data / Ley 1581 de 2012)",
+        "content": "Conforme a la legislación colombiana (Ley 1581 de 2012 y Decreto 1377 de 2013) y normativas internacionales de protección de datos, usted tiene derecho a:",
+        "bullets": [
+          "Conocer, actualizar y rectificar sus datos personales en cualquier momento.",
+          "Solicitar prueba de la autorización otorgada.",
+          "Ser informado sobre el uso que se le ha dado a sus datos.",
+          "Revocar la autorización y/o solicitar la supresión de sus datos de nuestras bases de datos.",
+          "Acceder de forma gratuita a sus datos personales que hayan sido objeto de tratamiento."
+        ]
+      },
+      {
+        "title": "6. Instrucciones para la Eliminación de Datos (Data Deletion)",
+        "content": "En cumplimiento de los requerimientos de Meta Developer Platform y las leyes de privacidad, cualquier usuario puede solicitar la eliminación total e inmediata de sus datos personales a través de los siguientes canales:",
+        "bullets": [
+          "Enviando un correo electrónico a david.agudelo.valencia@gmail.com con el asunto 'Eliminación de Datos Personales' indicando su número telefónico.",
+          "Enviando un mensaje directo a nuestro WhatsApp (+57 305 258 0913) con el texto 'BORRAR MIS DATOS'."
+        ],
+        "footerNote": "La solicitud será procesada en un plazo máximo de 48 horas hábiles, confirmando la supresión irreversible de sus registros."
+      },
+      {
+        "title": "7. Seguridad y Confidencialidad",
+        "content": "Adoptamos medidas técnicas y organizativas para proteger la confidencialidad e integridad de la información frente a accesos no autorizados, pérdida o alteración. Toda la comunicación a través de WhatsApp y web utiliza canales cifrados con protocolos SSL/TLS estándar de la industria."
+      },
+      {
+        "title": "8. Modificaciones a la Política de Privacidad",
+        "content": "Nos reservamos el derecho de actualizar esta política de privacidad para adaptarla a novedades legislativas o requerimientos técnicos de la plataforma de Meta. La versión vigente estará siempre disponible en este enlace."
+      }
+    ]
   },
   "wa": {
     "diagnostic": "Hola David, quiero el diagnóstico gratis de automatización.",
