@@ -1,4 +1,5 @@
 import { Window } from "@/components/desktop/Window"
+import { cn } from "@/lib/utils"
 
 type InfoNote = { title: string; body: string }
 
@@ -32,9 +33,9 @@ export function InfoWindow({
       zIndex={zIndex}
       minimized={minimized}
       active={active}
-      className={className}
+      className={cn("w-[min(680px,95vw)] max-h-[78vh]", className)}
     >
-      <div className="grid gap-4 p-4 sm:grid-cols-2">
+      <div className="grid gap-3 sm:gap-4 p-3 sm:p-4 grid-cols-1 sm:grid-cols-2">
         {notes.map((note) => (
           <div
             key={note.title}

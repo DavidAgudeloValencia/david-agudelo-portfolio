@@ -10,27 +10,55 @@ import { About } from "@/components/About"
 import { Contact } from "@/components/Contact"
 import { Footer } from "@/components/Footer"
 import { PrivacyPolicy } from "@/components/PrivacyPolicy"
+import { DesktopView } from "@/components/desktop/DesktopView"
 
-const isPrivacyPath = (path: string, hash: string) => {
+export type RouteType = "home" | "privacy" | "portfolio"
+
+export const getRoute = (path: string, hash: string): RouteType => {
   const normalized = path.toLowerCase().replace(/\/$/, "")
-  return (
+  const normHash = hash.toLowerCase()
+
+  if (
     normalized === "/politica-de-privacidad" ||
     normalized === "/privacy-policy" ||
     normalized === "/privacidad" ||
     normalized === "/privacy" ||
-    hash.toLowerCase() === "#politica-de-privacidad" ||
-    hash.toLowerCase() === "#privacy-policy"
-  )
+    normHash === "#politica-de-privacidad" ||
+    normHash === "#privacy-policy"
+  ) {
+    return "privacy"
+  }
+
+  if (
+    normalized === "/portafolio" ||
+    normalized === "/portfolio" ||
+    normalized === "/interactivo" ||
+    normalized === "/interactive" ||
+    normalized === "/desktop" ||
+    normHash === "#portafolio" ||
+    normHash === "#portfolio" ||
+    normHash === "#interactivo" ||
+    normHash === "#desktop"
+  ) {
+    return "portfolio"
+  }
+
+  return "home"
+}
+
+export const navigateTo = (url: string) => {
+  window.history.pushState({}, "", url)
+  window.dispatchEvent(new PopStateEvent("popstate"))
 }
 
 function App() {
-  const [isPrivacy, setIsPrivacy] = useState(() =>
-    isPrivacyPath(window.location.pathname, window.location.hash)
+  const [route, setRoute] = useState<RouteType>(() =>
+    getRoute(window.location.pathname, window.location.hash)
   )
 
   useEffect(() => {
     const handleLocationChange = () => {
-      setIsPrivacy(isPrivacyPath(window.location.pathname, window.location.hash))
+      setRoute(getRoute(window.location.pathname, window.location.hash))
     }
 
     window.addEventListener("popstate", handleLocationChange)
@@ -41,13 +69,22 @@ function App() {
     }
   }, [])
 
-  if (isPrivacy) {
+  if (route === "privacy") {
     return (
       <PrivacyPolicy
         onBack={() => {
-          window.history.pushState({}, "", "/")
-          setIsPrivacy(false)
+          navigateTo("/")
           window.scrollTo({ top: 0, behavior: "smooth" })
+        }}
+      />
+    )
+  }
+
+  if (route === "portfolio") {
+    return (
+      <DesktopView
+        onClose={() => {
+          navigateTo("/")
         }}
       />
     )

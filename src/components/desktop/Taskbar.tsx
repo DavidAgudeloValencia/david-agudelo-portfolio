@@ -97,15 +97,15 @@ export function Taskbar({
           onClick={() => setStartOpen(false)}
         />
       )}
-      <div className="absolute inset-x-0 bottom-3 z-40 flex items-end justify-center px-3">
-        <div className="relative">
+      <div className="absolute inset-x-0 bottom-2.5 sm:bottom-3 z-40 flex items-end justify-center px-2 sm:px-3">
+        <div className="relative max-w-[calc(100vw-1rem)]">
           {startOpen && (
-            <div className="absolute bottom-[calc(100%+10px)] left-0 z-50 w-64 overflow-hidden rounded-xl border border-black/10 bg-[#f0f4fa]/95 shadow-[0_16px_40px_rgba(0,0,0,0.35)] backdrop-blur-xl">
+            <div className="absolute bottom-[calc(100%+10px)] left-0 z-50 w-64 max-w-[calc(100vw-2rem)] overflow-hidden rounded-xl border border-black/10 bg-[#f0f4fa]/95 shadow-[0_16px_40px_rgba(0,0,0,0.35)] backdrop-blur-xl">
               <div className="border-b border-black/10 px-4 py-3">
                 <p className="text-[15px] font-semibold text-[#1f2937]">
                   {SITE.name}
                 </p>
-                <p className="text-[12px] text-[#4b5563]">{SITE.role}</p>
+                <p className="text-[12px] text-[#4b5563] truncate">{SITE.role}</p>
               </div>
               <div className="p-2">
                 {startItems.map((item) => (
@@ -139,56 +139,62 @@ export function Taskbar({
               </div>
             </div>
           )}
-          <div className="flex h-14 items-center gap-1 rounded-2xl border border-white/60 bg-white/60 px-2 shadow-[0_10px_30px_rgba(0,0,0,0.25)] backdrop-blur-xl">
+
+          {/* Main Floating Taskbar */}
+          <div className="flex h-12 sm:h-14 items-center gap-0.5 sm:gap-1 rounded-2xl border border-white/60 bg-white/70 px-1.5 sm:px-2 shadow-[0_10px_30px_rgba(0,0,0,0.25)] backdrop-blur-xl">
+            {/* Start button */}
             <button
               type="button"
               aria-label={t("desktop.taskbar.start")}
               onClick={() => setStartOpen((open) => !open)}
               className={cn(
-                "flex size-10 items-center justify-center rounded-xl transition-colors duration-150 hover:bg-white/60",
+                "flex size-9 sm:size-10 shrink-0 items-center justify-center rounded-xl transition-colors duration-150 hover:bg-white/60",
                 startOpen && "bg-white/70",
               )}
             >
-              <WindowsLogo className="size-5" />
+              <WindowsLogo className="size-4 sm:size-5" />
             </button>
 
-            <div className="mx-0.5 h-7 w-px bg-black/10" />
+            <div className="mx-0.5 h-6 sm:h-7 w-px shrink-0 bg-black/10" />
 
-            {apps.map((app) => {
-              const running = Boolean(windows[app.id])
-              const active = activeId === app.id
-              return (
-                <button
-                  key={app.id}
-                  type="button"
-                  aria-label={app.name}
-                  title={app.name}
-                  onClick={() => onAppClick(app.id)}
-                  className={cn(
-                    "group relative flex size-10 items-center justify-center rounded-xl transition-colors duration-150",
-                    active ? "bg-white/70" : running ? "bg-white/40" : "hover:bg-white/50",
-                  )}
-                >
-                  <span
-                    style={{ color: app.color }}
-                    className="transition-transform duration-150 group-hover:-translate-y-0.5 group-hover:scale-110"
+            {/* Apps */}
+            <div className="flex items-center gap-0.5 sm:gap-1 overflow-x-auto [scrollbar-width:none]">
+              {apps.map((app) => {
+                const running = Boolean(windows[app.id])
+                const active = activeId === app.id
+                return (
+                  <button
+                    key={app.id}
+                    type="button"
+                    aria-label={app.name}
+                    title={app.name}
+                    onClick={() => onAppClick(app.id)}
+                    className={cn(
+                      "group relative flex size-9 sm:size-10 shrink-0 items-center justify-center rounded-xl transition-colors duration-150",
+                      active ? "bg-white/70" : running ? "bg-white/40" : "hover:bg-white/50",
+                    )}
                   >
-                    {app.icon}
-                  </span>
-                  {(running || active) && (
                     <span
-                      className={cn(
-                        "absolute bottom-1 left-1/2 h-[3px] w-3.5 -translate-x-1/2 rounded-full",
-                        active ? "bg-[#0b5ed7]" : "bg-[#0b5ed7]/50",
-                      )}
-                    />
-                  )}
-                </button>
-              )
-            })}
+                      style={{ color: app.color }}
+                      className="transition-transform duration-150 group-hover:-translate-y-0.5 group-hover:scale-110"
+                    >
+                      {app.icon}
+                    </span>
+                    {(running || active) && (
+                      <span
+                        className={cn(
+                          "absolute bottom-1 left-1/2 h-[3px] w-3.5 -translate-x-1/2 rounded-full",
+                          active ? "bg-[#0b5ed7]" : "bg-[#0b5ed7]/50",
+                        )}
+                      />
+                    )}
+                  </button>
+                )
+              })}
+            </div>
 
-            <div className="mx-0.5 hidden h-7 w-px bg-black/10 md:block" />
-
+            {/* Tech apps (visible on md+) */}
+            <div className="mx-0.5 hidden h-7 w-px shrink-0 bg-black/10 md:block" />
             <div className="hidden items-center gap-1 md:flex">
               {techApps.map((tech) => (
                 <button
@@ -207,10 +213,26 @@ export function Taskbar({
                 </button>
               ))}
             </div>
+
+            {/* Mobile inline tray (hidden on sm+) */}
+            <div className="flex sm:hidden items-center gap-0.5 pl-0.5 border-l border-black/10">
+              <span className="text-[11px] font-semibold text-[#1f2937] px-1 tabular-nums">
+                {time}
+              </span>
+              <button
+                type="button"
+                aria-label={t("desktop.closeLabel")}
+                onClick={onClose}
+                className="flex size-8 shrink-0 items-center justify-center rounded-lg text-[#1f2937]/70 transition-colors duration-150 hover:bg-[#e81123] hover:text-white"
+              >
+                <X className="size-3.5" />
+              </button>
+            </div>
           </div>
         </div>
 
-        <div className="absolute right-3 bottom-0 flex h-14 items-center gap-1.5 rounded-2xl border border-white/60 bg-white/60 px-2 shadow-[0_10px_30px_rgba(0,0,0,0.25)] backdrop-blur-xl">
+        {/* Desktop / Tablet separate right tray (sm+) */}
+        <div className="hidden sm:flex absolute right-3 bottom-0 h-14 items-center gap-1.5 rounded-2xl border border-white/60 bg-white/60 px-2 shadow-[0_10px_30px_rgba(0,0,0,0.25)] backdrop-blur-xl">
           <a
             href={SITE.linkedin}
             target="_blank"
@@ -222,7 +244,7 @@ export function Taskbar({
           </a>
           <div className="flex flex-col items-end pr-1 text-[12px] leading-tight text-[#1f2937] tabular-nums">
             <span className="font-semibold">{time}</span>
-            <span className="hidden sm:inline text-[11px] text-[#4b5563]">
+            <span className="hidden md:inline text-[11px] text-[#4b5563]">
               {date}
             </span>
           </div>

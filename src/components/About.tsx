@@ -1,13 +1,11 @@
-import { useState } from "react"
 import { useTranslation } from "react-i18next"
 import { Monitor } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Reveal } from "@/components/Reveal"
-import { DesktopView } from "@/components/desktop/DesktopView"
+import { navigateTo } from "@/App"
 
 export function About() {
   const { t } = useTranslation()
-  const [desktopOpen, setDesktopOpen] = useState(false)
 
   return (
     <section
@@ -26,15 +24,13 @@ export function About() {
           <Button
             size="lg"
             className="mt-12"
-            onClick={() => setDesktopOpen(true)}
+            onClick={() => navigateTo("/portafolio")}
           >
             <Monitor className="size-4" />
             {t("desktop.openCta")}
           </Button>
         </Reveal>
       </div>
-
-      {desktopOpen && <DesktopView onClose={() => setDesktopOpen(false)} />}
     </section>
   )
 }

@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next"
 import { LinkedInIcon } from "@/components/icons"
 import { SITE } from "@/data/content"
+import { navigateTo } from "@/App"
 
 export function Footer() {
   const { t } = useTranslation()
@@ -16,11 +17,20 @@ export function Footer() {
         </div>
         <div className="flex flex-wrap items-center gap-6 text-[14px] text-bone-white">
           <a
+            href="/portafolio"
+            onClick={(e) => {
+              e.preventDefault()
+              navigateTo("/portafolio")
+            }}
+            className="text-bone-white/80 no-underline transition-colors duration-300 hover:text-fog-blue"
+          >
+            {t("desktop.openCta")}
+          </a>
+          <a
             href="/politica-de-privacidad"
             onClick={(e) => {
               e.preventDefault()
-              window.history.pushState({}, "", "/politica-de-privacidad")
-              window.dispatchEvent(new PopStateEvent("popstate"))
+              navigateTo("/politica-de-privacidad")
               window.scrollTo({ top: 0, behavior: "smooth" })
             }}
             className="text-bone-white/80 no-underline transition-colors duration-300 hover:text-fog-blue"

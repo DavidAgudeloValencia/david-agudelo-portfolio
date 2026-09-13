@@ -38,3 +38,4 @@ promp_demo_whatsapp.md
 
 # Frames fuente del wallpaper (solo locales; regenerar con npm run catbg)
 /cat_bg/
+output/

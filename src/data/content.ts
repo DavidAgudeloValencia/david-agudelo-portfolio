@@ -1,7 +1,7 @@
 export const SITE = {
   name: "David Agudelo",
   fullName: "David Agudelo Valencia",
-  role: "Automatización con IA para PYMES",
+  role: "Desarrollo de Software a la Medida",
   city: "Medellín, Colombia",
   whatsapp: "573052580913",
   email: "david.agudelo.valencia@gmail.com",

@@ -36,6 +36,7 @@ const STEPS: { at: number; count?: number; typing?: boolean }[] = [
 export function ChatMockup({
   autoPlay = true,
   className,
+  size = "lg",
 }: {
   autoPlay?: boolean
   className?: string
@@ -98,14 +99,22 @@ export function ChatMockup({
     }
   }, [visible, typing])
 
+  const isSmall = size === "sm"
+
   return (
     <div
       className={cn(
-        "desktop-base relative mx-auto flex w-full max-w-[280px] items-center justify-center py-2 select-none",
+        "desktop-base relative mx-auto flex w-full items-center justify-center py-1 sm:py-2 select-none",
+        isSmall ? "max-w-[260px] sm:max-w-[280px]" : "max-w-[280px] sm:max-w-[320px]",
         className,
       )}
     >
-      <div className="animate-[mockup-in_0.6s_cubic-bezier(0.52,0.01,0,1)_both] relative flex h-[520px] w-full transform-gpu flex-col overflow-hidden rounded-[40px] bg-neutral-900 p-2.5 shadow-2xl transition-transform duration-300 hover:-translate-y-1.5 sm:h-[540px]">
+      <div
+        className={cn(
+          "animate-[mockup-in_0.6s_cubic-bezier(0.52,0.01,0,1)_both] relative flex w-full transform-gpu flex-col overflow-hidden rounded-[36px] sm:rounded-[40px] bg-neutral-900 p-2 sm:p-2.5 shadow-2xl transition-transform duration-300 hover:-translate-y-1",
+          isSmall ? "h-[430px] sm:h-[480px]" : "h-[480px] sm:h-[540px]",
+        )}
+      >
         <div className="absolute top-24 -left-[5px] h-8 w-[2.5px] rounded-l-xs bg-neutral-700" />
         <div className="absolute top-36 -left-[5px] h-10 w-[2.5px] rounded-l-xs bg-neutral-700" />
         <div className="absolute top-48 -left-[5px] h-10 w-[2.5px] rounded-l-xs bg-neutral-700" />

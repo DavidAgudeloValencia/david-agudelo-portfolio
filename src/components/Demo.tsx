@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { waLink } from "@/data/content"
 import { Reveal } from "@/components/Reveal"
 import { ChatMockup } from "@/components/desktop/ChatMockup"
-import { Zap, Bot, CalendarCheck, ShieldCheck, Sparkles } from "lucide-react"
+import { Zap, Code2, CalendarCheck, ShieldCheck, Sparkles } from "lucide-react"
 
 export function Demo() {
   const { t } = useTranslation()
@@ -15,7 +15,7 @@ export function Demo() {
       desc: t("demo.features.speed.desc"),
     },
     {
-      icon: Bot,
+      icon: Code2,
       title: t("demo.features.ai.title"),
       desc: t("demo.features.ai.desc"),
     },

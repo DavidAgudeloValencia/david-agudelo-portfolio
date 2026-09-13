@@ -23,9 +23,10 @@ import {
   LaravelIcon,
   LinkedInIcon,
   MySqlIcon,
-  N8nIcon,
-  OpenAIIcon,
   ReactIcon,
+  TypeScriptIcon,
+  TailwindIcon,
+  GitIcon,
   WhatsAppIcon,
 } from "@/components/icons"
 import { SITE, waLink } from "@/data/content"
@@ -126,31 +127,31 @@ export function DesktopView({ onClose }: { onClose: () => void }) {
       id: "finder",
       name: t("desktop.apps.finder"),
       color: "#f59e0b",
-      icon: <FolderGlyph className="size-5" />,
+      icon: <FolderGlyph className="size-4.5 sm:size-5" />,
     },
     {
       id: "email",
       name: t("desktop.apps.email"),
       color: "#ea4335",
-      icon: <GmailIcon className="size-5" />,
+      icon: <GmailIcon className="size-4.5 sm:size-5" />,
     },
     {
       id: "whatsapp",
       name: t("desktop.apps.whatsapp"),
       color: "#25d366",
-      icon: <WhatsAppIcon className="size-5" />,
+      icon: <WhatsAppIcon className="size-4.5 sm:size-5" />,
     },
     {
       id: "github",
       name: t("desktop.apps.github"),
       color: "#181717",
-      icon: <GithubIcon className="size-5" />,
+      icon: <GithubIcon className="size-4.5 sm:size-5" />,
     },
     {
       id: "linkedin",
       name: t("desktop.apps.linkedin"),
       color: "#0a66c2",
-      icon: <LinkedInIcon className="size-5" />,
+      icon: <LinkedInIcon className="size-4.5 sm:size-5" />,
     },
   ]
 
@@ -158,10 +159,10 @@ export function DesktopView({ onClose }: { onClose: () => void }) {
   const techIcons = [
     { icon: <LaravelIcon className="size-4" />, color: "#ff2d20" },
     { icon: <ReactIcon className="size-4" />, color: "#149eca" },
+    { icon: <TypeScriptIcon className="size-4" />, color: "#3178c6" },
     { icon: <MySqlIcon className="size-4" />, color: "#00758f" },
-    { icon: <N8nIcon className="size-4" />, color: "#ea4b71" },
-    { icon: <OpenAIIcon className="size-4" />, color: "#10a37f" },
-    { icon: <WhatsAppIcon className="size-4" />, color: "#25d366" },
+    { icon: <TailwindIcon className="size-4" />, color: "#38bdf8" },
+    { icon: <GitIcon className="size-4" />, color: "#f05032" },
   ]
   const techApps = techNames.map((name, i) => ({
     id: `tech-${i}`,
@@ -209,7 +210,7 @@ export function DesktopView({ onClose }: { onClose: () => void }) {
       <LeftPanel />
       <DesktopIcons onOpen={openWindow} />
 
-      <div className="absolute top-6 right-3 bottom-[76px] z-10 hidden w-[320px] flex-col gap-3 lg:flex">
+      <div className="absolute top-6 right-3 bottom-[76px] z-10 hidden w-[280px] xl:w-[320px] flex-col gap-3 lg:flex">
         <div className="grid grid-cols-2 gap-3">
           <ClockWidget />
           <WeatherWidget />
@@ -218,7 +219,7 @@ export function DesktopView({ onClose }: { onClose: () => void }) {
       </div>
 
       {notification && (
-        <div className="absolute right-3 bottom-[76px] z-40 w-[320px] overflow-hidden rounded-2xl border border-black/10 bg-white/85 p-3 shadow-[0_12px_32px_rgba(0,0,0,0.35)] backdrop-blur-xl animate-[notif-in_0.25s_ease-out]">
+        <div className="absolute right-3 bottom-[64px] sm:bottom-[76px] z-40 w-[min(320px,calc(100vw-1.5rem))] overflow-hidden rounded-2xl border border-black/10 bg-white/90 p-3 shadow-[0_12px_32px_rgba(0,0,0,0.35)] backdrop-blur-xl animate-[notif-in_0.25s_ease-out]">
           <div className="flex items-start gap-3">
             <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-b from-[#3a7bd5] to-[#0b5ed7]">
               <Sparkles className="size-4 text-white" />
@@ -237,7 +238,7 @@ export function DesktopView({ onClose }: { onClose: () => void }) {
                   <X className="size-3.5" />
                 </button>
               </div>
-              <p className="mt-1 text-[13px] leading-snug text-[#4b5563]">
+              <p className="mt-1 text-[12px] sm:text-[13px] leading-snug text-[#4b5563]">
                 {notification}
               </p>
             </div>

@@ -1,6 +1,6 @@
 {
   "header": {
-    "cta": "Diagnóstico gratis"
+    "cta": "Cotizar desarrollo"
   },
   "nav": {
     "label": "Secciones",
@@ -11,22 +11,22 @@
   },
   "hero": {
     "label": "David Agudelo · Medellín",
-    "title": "Automatización con IA",
-    "subtitle": "para PYMES",
-    "subtitleLabel": "Bots de WhatsApp que responden 24/7, flujos que llenan tus hojas de cálculo solos y tableros que te cuentan las ventas. Menos horas manuales, más clientes atendidos.",
-    "ctaPrimary": "Agendar diagnóstico gratis",
+    "title": "Desarrollo de Software",
+    "subtitle": "a la medida",
+    "subtitleLabel": "Sistemas web, plataformas a la medida y aplicaciones robustas para hacer crecer tu negocio. Software moderno, rápido y diseñado para tus necesidades reales.",
+    "ctaPrimary": "Cotizar tu proyecto",
     "ctaSecondary": "Ver servicios",
     "statsLabel": "Resultados reales",
     "scroll": "SCROLL",
     "stats": [
       { "value": "4+", "label": "Años full stack" },
-      { "value": "24/7", "label": "Clientes atendidos" },
-      { "value": "1–2 sem", "label": "De entrega real" },
-      { "value": "20 h", "label": "Ahorro/mes por proceso" }
+      { "value": "100%", "label": "A la medida" },
+      { "value": "1–2 sem", "label": "Entrega MVP / Fase 1" },
+      { "value": "+40%", "label": "Eficiencia operativa" }
     ]
   },
   "marquee": {
-    "label": "Ayudo a negocios como estos",
+    "label": "Construyo software para sectores como",
     "sectors": [
       "Clínicas y consultorios",
       "Restaurantes y cafeterías",
@@ -38,189 +38,189 @@
   },
   "launch": {
     "badge": "Oferta de lanzamiento",
-    "title": "Bot de WhatsApp con IA funcionando en 10 días",
+    "title": "Tu sistema o plataforma web lista en tiempo récord",
     "price": "$1.9M",
-    "retainer": "+ retainer $700K/mes",
-    "note": "Limitada a 2 clientes en los primeros meses. A cambio: testimonio y video de tu caso.",
-    "cta": "Quiero esta oferta"
+    "retainer": "+ soporte y evolución opcional",
+    "note": "Cupos limitados para nuevos proyectos de desarrollo. Incluye arquitectura moderna, panel de administración y despliegue a producción.",
+    "cta": "Quiero cotizar mi proyecto"
   },
   "services": {
     "label": "Servicios",
-    "title": "Lo que hago por tu negocio",
-    "subtitle": "Automatizo el día a día para que tú te enfoques en vender. Todo entregable se deja funcionando con instrucciones simples.",
+    "title": "Soluciones de software para tu negocio",
+    "subtitle": "Construyo plataformas y sistemas modernos que impulsan tus ventas y simplifican tus operaciones. Todo entregable con código limpio y soporte continuo.",
     "items": [
       {
-        "title": "Bot de WhatsApp con IA",
-        "description": "Responde a tus clientes 24/7: cotiza, agenda citas, cobra por link y da seguimiento sin que toques el celular.",
-        "tag": "Automatización"
+        "title": "Aplicaciones Web y Paneles",
+        "description": "Sistemas administrativos, portales para clientes, cotizadores y plataformas a la medida construidas con React y Laravel.",
+        "tag": "Desarrollo"
       },
       {
-        "title": "Flujos n8n",
-        "description": "Conecto formularios, hojas de cálculo, tu CRM, correo y WhatsApp. Los datos se mueven solos entre sistemas.",
-        "tag": "Integración"
+        "title": "APIs e Integraciones de Sistemas",
+        "description": "Conecto tu software con pasarelas de pago, facturación electrónica, CRMs y bases de datos seguras y escalables.",
+        "tag": "Arquitectura"
       },
       {
-        "title": "Agentes con tu información",
-        "description": "Responden sobre tu catálogo, precios y horarios con base en tu propia información, no respuestas genéricas.",
-        "tag": "IA"
+        "title": "Software de Gestión y Facturación",
+        "description": "Sistemas para control de inventarios, pedidos, seguimiento de clientes y reportería sin depender de hojas de cálculo.",
+        "tag": "Sistemas"
       },
       {
-        "title": "Tablero de reportes",
-        "description": "Ventas, inventario y clientes actualizados automáticamente. Tú ves el cuadro; yo cuido el proceso.",
-        "tag": "Datos"
+        "title": "Landing Pages y Plataformas Web",
+        "description": "Sitios web de alto impacto, rápidos, optimizados para conversión y adaptados a cualquier dispositivo.",
+        "tag": "Frontend"
       }
     ]
   },
   "process": {
     "label": "Cómo trabajo",
-    "title": "Un proceso simple, con resultado claro",
+    "title": "Un proceso claro, ágil y sin sorpresas",
     "items": [
       {
         "step": "01",
-        "title": "Diagnóstico gratis",
-        "description": "15 min por llamada. Identifico el proceso manual exacto que te quita tiempo."
+        "title": "Diagnóstico y requerimientos",
+        "description": "15 min por llamada. Evaluamos las necesidades técnicas y comerciales de tu proyecto."
       },
       {
         "step": "02",
-        "title": "Propuesta con resultado",
-        "description": "Te digo exactamente qué se acomoda y cuántas horas/mes te va a ahorrar."
+        "title": "Propuesta y arquitectura",
+        "description": "Definición clara de alcance, tecnologías recomendadas, hitos y cronograma de entrega."
       },
       {
         "step": "03",
-        "title": "Entrega en 1–2 semanas",
-        "description": "Montaje, pruebas y puesta en vivo. Te dejo una guía simple de uso."
+        "title": "Desarrollo y entrega ágil",
+        "description": "Construcción modular, pruebas continuas y despliegue en producción con guía de uso."
       },
       {
         "step": "04",
-        "title": "Retainer opcional",
-        "description": "Soporte y mejoras continuas con un pago mensual bajo, sin sorpresas."
+        "title": "Soporte y evolución",
+        "description": "Garantía, mantenimiento preventivo y nuevas funcionalidades a medida que crece tu negocio."
       }
     ]
   },
   "pricing": {
     "label": "Inversión",
-    "title": "Precios claros, sin letra pequeña",
-    "subtitle": "Cada proyecto se cotiza según alcance. Estos son los referentes de arranque.",
+    "title": "Planes y cotizaciones transparentes",
+    "subtitle": "Cada desarrollo se cotiza según requerimientos y alcance. Estos son los referentes de arranque.",
     "featured": "Más pedido",
-    "disclaimer": "Todos los valores en COP. Cada proyecto inicia con 50% de anticipo. Factura electrónica incluida.",
+    "disclaimer": "Todos los valores en COP. Cada proyecto cuenta con factura electrónica y contrato formal por hitos de entrega.",
     "items": [
       {
-        "name": "Diagnóstico",
+        "name": "Diagnóstico Técnico",
         "amount": "$0",
-        "note": "Proceso sin costo",
-        "features": ["Revisión de 1 proceso manual", "Propuesta con resultado", "Sin compromiso"],
+        "note": "Evaluación sin costo",
+        "features": ["Revisión técnica de requerimientos", "Estimación de arquitectura y tiempos", "Sin compromiso"],
         "ctaLabel": "Agendarlo",
-        "ctaMessage": "Hola David, quiero el diagnóstico gratis de automatización."
+        "ctaMessage": "Hola David, quiero cotizar un desarrollo de software para mi negocio."
       },
       {
-        "name": "Automatización con IA",
+        "name": "Desarrollo Web / MVP",
         "amount": "$2 – 4 M",
         "note": "Proyecto · pago 50/50",
-        "featured": true,
-        "features": ["Bot de WhatsApp + IA o flujo n8n", "Puesta en vivo y guía simple de uso", "Entrega en 1–2 semanas", "Retainer mensual opcional"],
+        "features": ["Sitio web interactivo o MVP funcional", "Frontend moderno + backend estructurado", "Entrega ágil y puesta en producción", "Soporte y garantía inicial"],
         "ctaLabel": "Pedir cotización",
-        "ctaMessage": "Hola David, me interesa la automatización con IA."
+        "ctaMessage": "Hola David, me interesa cotizar un desarrollo web / MVP."
       },
       {
-        "name": "Retainer mensual",
-        "amount": "$500K – 1.5M",
-        "note": "Por mes · desde el mes 1",
-        "features": ["Mantenimiento y mejoras continuas", "Respuestas nuevas para el bot", "Integración adicional", "Soporte prioritario"],
-        "ctaLabel": "Saber más",
-        "ctaMessage": "Hola David, quiero saber más del retainer mensual."
-      },
-      {
-        "name": "Desarrollo a la medida",
+        "name": "Software a la Medida",
         "amount": "$4 – 10 M",
         "note": "Sistemas completos · pago por hitos",
-        "features": ["Cotizadores, inventario, facturación", "Aplicación web o panel administrativo", "Pago por hitos 50/30/20"],
+        "featured": true,
+        "features": ["Paneles administrativos, cotizadores o plataformas", "Arquitectura escalable (Laravel / React / SQL)", "Integración de pagos y facturación", "Pago por hitos de entrega (50/30/20)"],
         "ctaLabel": "Pedir cotización",
-        "ctaMessage": "Hola David, me interesa la automatización con IA."
+        "ctaMessage": "Hola David, me interesa un software a la medida para mi negocio."
+      },
+      {
+        "name": "Soporte y Evolución",
+        "amount": "$500K – 1.5M",
+        "note": "Por mes · opcional",
+        "features": ["Mantenimiento y mejoras continuas", "Nuevas funcionalidades y módulos", "Optimización de rendimiento y seguridad", "Soporte técnico prioritario"],
+        "ctaLabel": "Saber más",
+        "ctaMessage": "Hola David, quiero saber más del soporte y mantenimiento mensual."
       }
     ]
   },
   "demo": {
     "label": "Demo",
-    "title": "Así responde el bot a tus clientes",
-    "subtitle": "Esto es lo que verá un cliente que te escribe a cualquier hora: respuesta inmediata, cotización y agenda, sin que toques el celular.",
-    "cta": "Probar el bot en WhatsApp",
+    "title": "Atención inmediata para cotizar tu desarrollo",
+    "subtitle": "Escríbeme por WhatsApp para evaluar tu proyecto. Recibes atención inmediata, diagnóstico de alcance y agendamiento de reunión técnica.",
+    "cta": "Cotizar por WhatsApp",
     "badge": "Simulación interactiva",
     "features": {
       "speed": {
         "title": "Respuesta en < 2 segundos",
-        "desc": "Atención inmediata 24/7 sin demoras ni clientes esperando."
+        "desc": "Atención ágil y asesoría directa sobre la viabilidad técnica de tu proyecto."
       },
       "ai": {
-        "title": "Cotización y Calificación con IA",
-        "desc": "Entiende lo que el cliente necesita, envía precios y responde dudas con tus propios datos."
+        "title": "Alcance y propuesta clara",
+        "desc": "Definición inicial de requerimientos, tecnologías recomendadas y estimación de inversión."
       },
       "agenda": {
-        "title": "Agendamiento automático",
-        "desc": "Agenda citas o llamadas de diagnóstico directamente sin intervención manual."
+        "title": "Agendamiento de reunión técnica",
+        "desc": "Coordinamos una sesión para profundizar en los detalles y entregarte una propuesta formal."
       }
     }
   },
   "about": {
     "label": "Sobre mí",
-    "title": "David, desarrollador que convierte procesos manuales en automatizaciones",
-    "caption": "Desarrollador full stack · Automatización e IA",
-    "p1": "Vengo de 4+ años como desarrollador full stack en Movilbox (PHP/Laravel, React, SQL) y hoy aplico IA y automatización para que el dueño del negocio no tenga que estar pegado al teléfono.",
-    "p2": "Mi método: diagnóstico gratis de 1 proceso → propuesta con resultado medible → entrega en 1–2 semanas → retainer de mejora continua.",
+    "title": "David, desarrollador full stack enfocado en software y aplicaciones web",
+    "caption": "Desarrollador full stack · Laravel & React",
+    "p1": "Vengo de 4+ años como desarrollador full stack en Movilbox (PHP/Laravel, React, SQL, TypeScript) creando sistemas a la medida, plataformas web y software escalable que resuelven las necesidades reales de tu negocio.",
+    "p2": "Mi método: diagnóstico técnico inicial → propuesta clara con hitos → desarrollo ágil y entregas continuas → soporte y evolución del software.",
     "highlights": [
-      "4+ años como desarrollador full stack (PHP/Laravel, React, SQL)",
-      "Formación activa en n8n, prompt engineering, ML y Big Data",
+      "4+ años como desarrollador full stack (PHP/Laravel, React, SQL, TypeScript)",
+      "Especialista en aplicaciones web escalables, arquitecturas de backend y APIs",
       "Persona natural con matrícula mercantil y Régimen Simple",
-      "Facturación electrónica: todo 100% legal y con contrato por chat"
+      "Facturación electrónica y contratos formales para cada proyecto"
     ],
     "ctaWhatsApp": "Escríbeme por WhatsApp",
     "ctaLinkedIn": "Ver mi LinkedIn"
   },
   "contact": {
     "label": "Contacto",
-    "title": "¿Te quita tiempo atender mensajes o armar cotizaciones?",
-    "subtitle": "Escríbeme por WhatsApp, cuéntame el proceso que más te cansa y te propongo cómo automatizarlo.",
-    "cta": "Agéndame el diagnóstico gratis",
+    "title": "¿Tienes una idea o necesitas un sistema para tu empresa?",
+    "subtitle": "Escríbeme por WhatsApp, cuéntame sobre tu proyecto y te preparo una propuesta técnica y cotización a la medida.",
+    "cta": "Cotizar proyecto de desarrollo",
     "linkedin": "LinkedIn",
-    "small": "David Agudelo · Medellín, Colombia · Automatización e IA"
+    "small": "David Agudelo · Medellín, Colombia · Desarrollo Full Stack"
   },
   "footer": {
     "rights": "© 2026 David Agudelo Valencia · Hecho con pasión desde Medellín",
-    "stack": "Laravel · React · n8n · IA",
+    "stack": "Laravel · React · TypeScript · SQL",
     "privacy": "Política de Privacidad"
   },
   "privacy": {
     "title": "Política de Privacidad y Tratamiento de Datos",
-    "subtitle": "Cumplimiento legal para WhatsApp Business API, Inteligencia Artificial y Protección de Datos Personales (Ley 1581 de 2012 / Meta Platforms).",
+    "subtitle": "Cumplimiento legal para WhatsApp Business API y Protección de Datos Personales (Ley 1581 de 2012 / Meta Platforms).",
     "lastUpdated": "Última actualización: Septiembre de 2026",
     "backHome": "Volver al inicio",
     "sections": [
       {
         "title": "1. Identidad del Responsable del Tratamiento",
-        "content": "El responsable del tratamiento de los datos personales recopilados a través de este sitio web y del asistente automatizado de WhatsApp es David Agudelo Valencia (en adelante, 'el Titular' o 'David Agudelo'), persona natural con domicilio en Medellín, Colombia. Correo de contacto: david.agudelo.valencia@gmail.com. WhatsApp de contacto: +57 305 258 0913."
+        "content": "El responsable del tratamiento de los datos personales recopilados a través de este sitio web y de la atención por WhatsApp es David Agudelo Valencia (en adelante, 'el Titular' o 'David Agudelo'), persona natural con domicilio en Medellín, Colombia. Correo de contacto: david.agudelo.valencia@gmail.com. WhatsApp de contacto: +57 305 258 0913."
       },
       {
         "title": "2. Finalidad del Tratamiento de Datos",
         "content": "Los datos proporcionados voluntariamente por el usuario serán tratados con las siguientes finalidades:",
         "bullets": [
-          "Atención inmediata de consultas, asesorías y cotizaciones sobre servicios de desarrollo de software y automatización con IA.",
-          "Agendamiento y confirmación de sesiones de diagnóstico gratuitas.",
-          "Ejecución de flujos conversacionales automatizados a través del bot de WhatsApp para optimizar el tiempo de respuesta.",
+          "Atención inmediata de consultas, asesorías y cotizaciones sobre servicios de desarrollo de software y aplicaciones web.",
+          "Agendamiento y confirmación de sesiones de diagnóstico técnico y reuniones de requerimientos.",
+          "Atención ágil de consultas comerciales y propuestas a través de canales digitales.",
           "Seguimiento comercial y soporte técnico relacionado con los proyectos contratados o en evaluación."
         ]
       },
       {
         "title": "3. Datos Personales Recopilados",
-        "content": "A través de la interacción con el sitio web o el bot de WhatsApp, recopilamos únicamente los datos necesarios:",
+        "content": "A través de la interacción con el sitio web o canales de WhatsApp, recopilamos únicamente los datos necesarios:",
         "bullets": [
           "Número de teléfono móvil (WhatsApp ID).",
           "Nombre de perfil visible en WhatsApp y nombre proporcionado en la conversación.",
-          "Contenido de los mensajes y requerimientos comerciales enviados por el usuario.",
-          "Metadatos técnicos de entrega de mensajes (fecha, hora y estado de entrega proporcionados por Meta)."
+          "Contenido de los mensajes y requerimientos de software enviados por el usuario.",
+          "Metadatos técnicos de entrega de mensajes (fecha, hora y estado de entrega)."
         ]
       },
       {
         "title": "4. Integración con Meta Platforms y Proveedores Tecnológicos",
-        "content": "Para operar el asistente inteligente, utilizamos la API de WhatsApp Cloud provista por Meta Platforms, Inc. y plataformas de automatización e inteligencia artificial (n8n, OpenAI API). Estas plataformas procesan las solicitudes de acuerdo con estrictas políticas de privacidad y seguridad internacional. No vendemos, alquilamos ni transferimos tus datos a terceros con fines publicitarios no autorizados."
+        "content": "Para la comunicación utilizamos la API de WhatsApp provista por Meta Platforms, Inc. y herramientas tecnológicas que procesan solicitudes bajo estrictas políticas de privacidad y seguridad internacional. No vendemos, alquilamos ni transferimos tus datos a terceros con fines publicitarios no autorizados."
       },
       {
         "title": "5. Derechos del Titular (Habeas Data / Ley 1581 de 2012)",
@@ -248,15 +248,15 @@
       },
       {
         "title": "8. Modificaciones a la Política de Privacidad",
-        "content": "Nos reservamos el derecho de actualizar esta política de privacidad para adaptarla a novedades legislativas o requerimientos técnicos de la plataforma de Meta. La versión vigente estará siempre disponible en este enlace."
+        "content": "Nos reservamos el derecho de actualizar esta política de privacidad para adaptarla a novedades legislativas o requerimientos técnicos. La versión vigente estará siempre disponible en este enlace."
       }
     ]
   },
   "wa": {
-    "diagnostic": "Hola David, quiero el diagnóstico gratis de automatización.",
-    "quote": "Hola David, me interesa la automatización con IA.",
-    "retainer": "Hola David, quiero saber más del retainer mensual.",
-    "launch": "Hola David, me interesa la oferta de lanzamiento (bot en 10 días)."
+    "diagnostic": "Hola David, quiero cotizar un desarrollo de software para mi negocio.",
+    "quote": "Hola David, me interesa cotizar un proyecto de desarrollo.",
+    "retainer": "Hola David, quiero información sobre el soporte y mantenimiento de software.",
+    "launch": "Hola David, me interesa la oferta de lanzamiento de desarrollo de software."
   },
   "desktop": {
     "openCta": "Ver portafolio interactivo",
@@ -269,7 +269,7 @@
       "linkedin": "LinkedIn"
     },
     "emailSubject": "Hola David, te escribo desde tu portafolio",
-    "wa": "Hola David, vi tu escritorio y quiero el diagnóstico gratis de automatización.",
+    "wa": "Hola David, estuve viendo tu portafolio y quiero cotizar un proyecto de desarrollo.",
     "finder": {
       "windowTitle": "CV — David Agudelo",
       "emptyFolder": "Esta carpeta está vacía",
@@ -280,7 +280,7 @@
           "notes": [
             {
               "title": "Perfil",
-              "body": "Desarrollador full stack con 4+ años de experiencia que convierte procesos manuales en automatizaciones con IA para PYMES de Medellín."
+              "body": "Desarrollador full stack con 4+ años de experiencia construyendo aplicaciones web, paneles de administración y sistemas a la medida para empresas."
             }
           ]
         },
@@ -290,11 +290,11 @@
           "notes": [
             {
               "title": "Desarrollador full stack — Movilbox",
-              "body": "4+ años desarrollando con PHP/Laravel, React y SQL. Hoy aplico IA y automatización para que el dueño del negocio no tenga que estar pegado al teléfono."
+              "body": "4+ años desarrollando plataformas con PHP/Laravel, React, SQL y arquitecturas de alto tráfico y disponibilidad."
             },
             {
-              "title": "Automatización freelance",
-              "body": "Bots de WhatsApp con IA, flujos n8n y tableros de reportes entregados en 1–2 semanas para clínicas, restaurantes, ferreterías, talleres, gimnasios y droguerías."
+              "title": "Desarrollo freelance de software",
+              "body": "Sistemas de gestión, plataformas web a la medida, cotizadores e integraciones de pagos para empresas en diversos sectores."
             }
           ]
         },
@@ -303,8 +303,8 @@
           "name": "Educación",
           "notes": [
             {
-              "title": "Formación activa",
-              "body": "n8n, prompt engineering, ML y Big Data — aprendiendo en vivo para aplicar lo último a tus procesos."
+              "title": "Formación continua",
+              "body": "Ingeniería y desarrollo de software, profundización en arquitecturas modernas, TypeScript, React, Laravel, Cloud y bases de datos relacionales."
             }
           ]
         },
@@ -313,8 +313,8 @@
           "name": "Habilidades",
           "notes": [
             {
-              "title": "Técnicas",
-              "body": "PHP/Laravel · React · SQL · n8n · IA y agentes · Integración WhatsApp · Tableros de reportes"
+              "title": "Stack técnico",
+              "body": "PHP/Laravel · React · TypeScript · SQL / MySQL · REST APIs · Tailwind CSS · Arquitectura de Software · Git"
             }
           ]
         },
@@ -323,12 +323,12 @@
           "name": "Proyectos",
           "notes": [
             {
-              "title": "Bot de WhatsApp con IA",
-              "body": "Responde 24/7: cotiza, agenda citas, cobra por link y da seguimiento sin que toques el celular."
+              "title": "Sistemas a la Medida y Paneles Web",
+              "body": "Plataformas para inventarios, facturación, cotizaciones y administración de operaciones empresariales."
             },
             {
-              "title": "Flujos n8n y tableros",
-              "body": "Formularios, hojas de cálculo, CRM, correo y WhatsApp conectados. Ventas, inventario y clientes en un tablero automático."
+              "title": "Aplicaciones Web y APIs",
+              "body": "Desarrollos escalables con interfaces interactivas, integración de pasarelas y alto rendimiento."
             }
           ]
         },
@@ -338,7 +338,7 @@
           "notes": [
             {
               "title": "WhatsApp",
-              "body": "304 671 0563 — el bot responde 24/7"
+              "body": "304 671 0563 — atención y cotizaciones directas"
             },
             {
               "title": "Email",
@@ -359,11 +359,11 @@
     "taskbar": {
       "start": "Inicio",
       "shutdown": "Apagar",
-      "tech": ["Laravel", "React", "SQL", "n8n", "OpenAI", "WhatsApp"]
+      "tech": ["Laravel", "React", "TypeScript", "SQL", "Tailwind", "Git"]
     },
     "profile": {
-      "title": "FULL-STACK · AUTOMATIZACIÓN E IA",
-      "description": "Desarrollador full stack que convierte procesos manuales en automatizaciones con IA para PYMES de Medellín. 4+ años construyendo con PHP/Laravel, React y SQL.",
+      "title": "FULL-STACK · DESARROLLO DE SOFTWARE",
+      "description": "Desarrollador full stack con 4+ años creando aplicaciones web y sistemas a la medida con PHP/Laravel, React, TypeScript y SQL.",
       "moreAbout": "MÁS SOBRE MÍ"
     },
     "icons": {
@@ -378,7 +378,7 @@
       "aboutTitle": "Acerca de este escritorio",
       "aboutBody": "Portafolio interactivo construido con React, Tailwind CSS y TypeScript. Diseño, contenido y código por David Agudelo Valencia — Medellín, Colombia.",
       "projectsTitle": "Proyectos",
-      "notesTitle": "Notas y bocetos",
+      "notesTitle": "Notas y arquitectura",
       "publicationsTitle": "Publicaciones",
       "publications": [
         {
@@ -387,13 +387,13 @@
         },
         {
           "title": "Mi perfil de GitHub",
-          "body": "Código y experimentos en público."
+          "body": "Código y proyectos en público."
         }
       ],
-      "demoTitle": "Demo del bot",
+      "demoTitle": "Cotización de Proyecto",
       "galleryTitle": "Galería",
       "galleryEmpty": "Aún no hay proyectos en la galería.",
-      "demoCta": "Ver demo en vivo (gratis)",
+      "demoCta": "Cotizar por WhatsApp",
       "minimizeLabel": "Minimizar",
       "maximizeLabel": "Maximizar",
       "restoreLabel": "Restaurar",
@@ -428,55 +428,55 @@
       "title": "Notificaciones",
       "dismiss": "Cerrar",
       "messages": [
-        "Oferta de lanzamiento vigente: bot de WhatsApp desde $1.9M.",
-        "Diagnóstico gratis confirmado: precio $0, sin compromiso.",
-        "Retainer disponible desde $500K/mes, con soporte prioritario.",
-        "Proyectos de automatización desde $2M, entrega en 1–2 semanas.",
-        "Desarrollo a la medida desde $4M, pago por hitos."
+        "Oferta de lanzamiento: desarrollo web o MVP con entrega ágil.",
+        "Cotización inicial sin costo: analizamos los requerimientos de tu sistema.",
+        "Planes de mantenimiento y evolución continua de software.",
+        "Desarrollo a la medida con pagos por hitos (50/30/20).",
+        "Stack tecnológico: Laravel, React, TypeScript y bases de datos SQL."
       ]
     },
     "demoChat": {
       "botName": "David Agudelo",
-      "subtitle": "BOT IA · en línea",
+      "subtitle": "Desarrollo de Software · en línea",
       "typing": "escribiendo",
       "today": "Hoy",
       "encrypted": "Los mensajes están cifrados de extremo a extremo",
       "placeholder": "Mensaje",
-      "caption": "Esto es lo que ve un cliente que escribe a cualquier hora: respuesta inmediata con IA, sin que toques el celular.",
+      "caption": "Atención inmediata y personalizada para evaluar y cotizar el desarrollo de tu aplicación o sistema.",
       "messages": [
         {
           "from": "user",
-          "text": "Hola, ¿me cotizan un bot para mi negocio? 🏪",
+          "text": "Hola David, ¿me cotizan un desarrollo de software para mi negocio? 💻",
           "time": "11:47 p. m."
         },
         {
           "from": "bot",
-          "text": "¡Hola! 👋 Soy el bot de David Agudelo y respondo a cualquier hora.",
+          "text": "¡Hola! 👋 Con gusto te asesoramos con el desarrollo de tu proyecto.",
           "time": "11:47 p. m."
         },
         {
           "from": "bot",
-          "text": "Te dejo las opciones: 1️⃣ Bot de WhatsApp desde $1.9M · 2️⃣ Diagnóstico gratis $0 · 3️⃣ Retainer desde $500K/mes",
+          "text": "Desarrollamos: 1️⃣ Aplicaciones y plataformas web · 2️⃣ Sistemas a la medida (inventario/ventas/ERP) · 3️⃣ Sitios web de alto impacto",
           "time": "11:47 p. m."
         },
         {
           "from": "user",
-          "text": "El diagnóstico gratis 👀",
+          "text": "Necesito un sistema a la medida para gestionar ventas e inventario 📊",
           "time": "11:48 p. m."
         },
         {
           "from": "bot",
-          "text": "Perfecto ✅ ¿A qué se dedica tu negocio?",
+          "text": "¡Excelente! Trabajamos con arquitecturas modernas y escalables (React, Laravel, SQL). ¿Para qué tipo de empresa es?",
           "time": "11:48 p. m."
         },
         {
           "from": "user",
-          "text": "Tengo una tienda de ropa 🛍️",
+          "text": "Es para una distribuidora y tienda con 3 sedes 🏢",
           "time": "11:48 p. m."
         },
         {
           "from": "bot",
-          "text": "Listo ✔ Te agendé el diagnóstico para mañana 10 a. m. Un humano te contacta para confirmar.",
+          "text": "Perfecto ✔ Te agendé una llamada técnica para mañana 10 a. m. para revisar requerimientos y darte una cotización exacta.",
           "time": "11:48 p. m."
         }
       ]

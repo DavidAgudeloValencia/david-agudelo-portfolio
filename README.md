@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/DavidAgudeloValencia/david-agudelo-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/DavidAgudeloValencia/david-agudelo-portfolio/actions/workflows/ci.yml)
 
-Landing page de servicios (automatización con IA para PYMES de Medellín) + escritorio interactivo estilo Windows.
+Landing page de servicios (desarrollo de software full stack a la medida para empresas de Medellín) + escritorio interactivo estilo Windows accesible directamente por `/portafolio`.
 Stack: **React + TypeScript + Vite + Tailwind CSS v4 + shadcn/ui (Base UI) + lucide-react**.
 
 Lista para publicar en **Netlify (gratis)**.
